@@ -1,0 +1,3542 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>i-CAM 2026 | IIT Jodhpur</title>
+  <meta name="description" content="i-CAM 2026 (ICAM 2026), International Conference on Applied Materials, organized by the Department of Materials Engineering, IIT Jodhpur, from 23-25 October 2026.">
+  <meta name="keywords" content="i-CAM 2026, icam, icam 2026, IIT Jodhpur, International Conference on Applied Materials, applied materials conference, materials engineering, materials science, IITJ">
+  <link rel="icon" type="image/jpeg" href="assets/images/icam_logo_hd.jpg">
+  <link rel="apple-touch-icon" href="assets/images/icam_logo_hd.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body { font-family: Arial, sans-serif; background:#f5f5f5; }
+
+    /* Header */
+    .iit-header {
+      background:#fff;
+      border-bottom:3px solid #8B0000;
+      padding:10px 0;
+    }
+    .iit-header img { height:80px; object-fit:contain; }
+    .iit-title { font-size:22px; font-weight:bold; color:#002147; }
+    .iit-subtitle { font-size:18px; }
+
+    /* Navigation (Tabs Style - Previous Working Version) */
+    .nav-tabs-custom {
+      background:#002147;
+    }
+
+    .nav-tabs-custom .container {
+      max-width: 100%;
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+
+    .navbar-nav {
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+
+    /* Fix hamburger icon visibility */
+    .navbar-toggler {
+      border:2px solid #fff;
+      padding:6px 10px;
+      border-radius:6px;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .nav-tabs-custom .nav-link {
+      color:#fff;
+      padding:12px 12px;
+      font-weight:500;
+      border:none;
+      white-space: nowrap;
+      font-size: 15px;
+    }
+
+    .nav-tabs-custom .nav-link:hover {
+      background:#8B0000;
+      color:#fff;
+    }
+    .nav-tabs-custom .nav-link {
+      color:#fff;
+      padding:12px 12px;
+      font-weight:500;
+      border:none;
+      white-space: nowrap;
+      font-size: 15px;
+    }
+    .nav-tabs-custom .nav-link:hover {
+      background:#8B0000;
+      color:#fff;
+    }
+
+    /* Premium Hero Slider */
+.hero {
+  position: relative;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.hero .carousel-item {
+  height: 65vh;
+  min-height: 420px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* Smart video framing */
+.hero .carousel-item video,
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center; /* default focus */
+}
+
+/* Adjust framing based on screen */
+@media (max-width: 768px) {
+  .hero-video {
+    object-position: center top; /* avoid cropping important top content */
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-video {
+    object-position: center 40%; /* slightly shift for better composition */
+  }
+}
+
+.hero .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: zoomIn 12s ease-in-out infinite;
+}
+
+/* Fix video sizing in hero (show full video) */
+.hero .carousel-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* show full video without cropping */
+  background: #000; /* fill empty space */
+  display: block;
+}
+
+/* Smooth zoom (Ken Burns effect) */
+@keyframes zoomIn {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+/* Gradient overlay for premium look */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.4));
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+
+  /* Reduced width box */
+  width: auto;
+  max-width: 700px;
+
+  background: rgba(0, 0, 0, 0.55);
+  padding: 15px 20px;
+  border-radius: 10px;
+  
+}
+
+.hero-subtitle {
+  font-size: clamp(16px, 3vw, 28px);
+  font-weight: 500;
+  margin-bottom: 8px;
+  white-space: nowrap; /* keep in one line */
+}
+
+.hero-title {
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+    .hero-title i {
+      font-style: italic;
+      display: inline-block;
+      transform: skewX(-15deg);
+    }
+
+
+.hero-date {
+  font-size: clamp(14px, 2.5vw, 20px);
+  margin-top: 5px;
+}
+
+.news-ticker {
+  background: linear-gradient(135deg, #8B0000, #002147);
+  color: #fff;
+  border-top: 2px solid #c9a227;
+  border-bottom: 1px solid rgba(0,33,71,0.18);
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 5px 12px rgba(0,33,71,0.1);
+}
+
+.news-ticker-inner {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+}
+
+.news-marquee {
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.news-marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: newsScroll 24s linear infinite;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@keyframes newsScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+.countdown-heading {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #FFD700;
+  margin-bottom: 8px;
+}
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(68px, 1fr));
+  gap: 8px;
+}
+
+.countdown-box {
+  background: linear-gradient(180deg, #ffffff 0%, #fff8dc 100%);
+  border: 1px solid rgba(201,162,39,0.75);
+  border-radius: 8px;
+  padding: 10px 6px;
+  box-shadow: 0 12px 26px rgba(0,33,71,0.14);
+  position: relative;
+  overflow: hidden;
+}
+
+.countdown-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #c9a227, transparent);
+}
+
+.countdown-value {
+  display: block;
+  color: #8B0000;
+  font-size: clamp(20px, 3vw, 30px);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.countdown-label {
+  display: block;
+  color: #002147;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  .hero-content {
+    width: calc(100% - 32px);
+  }
+
+  .hero-subtitle {
+    white-space: normal;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Carousel controls styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.carousel-indicators .active {
+  background-color: #FFD700;
+}
+
+/* Subtle text animations */
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.hero-subtitle,
+.hero-title,
+.hero-date {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero-subtitle { animation-delay: 0.3s; }
+.hero-title { animation-delay: 0.6s; }
+.hero-date { animation-delay: 0.9s; }
+
+    /* Countdown Timer */
+    .countdown {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .dates-countdown {
+      max-width: 360px;
+      margin-left: auto;
+    }
+
+    .registration-table thead tr:first-child th {
+      background: #002147;
+      color: #fff;
+      border-color: #153b66;
+    }
+
+    .registration-table thead tr:nth-child(2) th,
+    .registration-table thead tr:nth-child(3) th {
+      background: #d7f3fb;
+      color: #002147;
+      border-color: #94c7d8;
+    }
+
+    .registration-table tbody td {
+      vertical-align: middle;
+      border-color: #b8d5df;
+    }
+
+    .registration-table tbody tr:nth-child(odd) td {
+      background: #f5fcff;
+    }
+
+    .registration-table tbody tr:nth-child(even) td {
+      background: #ffffff;
+    }
+
+    .registration-note {
+      background: #f5fcff;
+      border-left: 4px solid #8B0000;
+      padding: 12px 15px;
+      border-radius: 6px;
+      margin-bottom: 18px;
+      color: #223;
+    }
+
+    .registration-table thead tr:first-child th:nth-child(2) {
+      background: linear-gradient(135deg, #8B0000, #b21f1f);
+      color: #fff;
+    }
+
+    .registration-table tbody td:nth-child(2),
+    .registration-table tbody td:nth-child(3) {
+      background: #fff8dc;
+    }
+
+    .registration-action {
+      display: inline-block;
+      background: linear-gradient(135deg, #8B0000, #c62828);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 30px;
+      border-radius: 6px;
+      font-weight: 700;
+      box-shadow: 0 8px 18px rgba(139,0,0,0.22);
+      transition: all 0.25s ease;
+    }
+
+    .registration-action:hover {
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(139,0,0,0.28);
+    }
+
+    .pre-registration-box {
+      background: #fff;
+      border: 1px solid #d8dde6;
+      border-radius: 8px;
+      padding: 18px;
+      margin-bottom: 22px;
+      box-shadow: 0 6px 16px rgba(0,33,71,0.08);
+    }
+
+    .pre-registration-box h5 {
+      color: #002147;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .discount-highlight {
+      color: #8B0000;
+      background: #fff8dc;
+      border: 1px solid #c9a227;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .flash-highlight {
+      animation: flashHighlight 1.2s ease-in-out infinite;
+    }
+
+    @keyframes flashHighlight {
+      0%, 100% {
+        background: #fff8dc;
+        color: #8B0000;
+        box-shadow: 0 0 0 rgba(201,162,39,0);
+      }
+      50% {
+        background: #ffe16a;
+        color: #002147;
+        box-shadow: 0 0 14px rgba(201,162,39,0.65);
+      }
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #8B0000, #c62828);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 22px;
+      border-radius: 6px;
+      font-weight: 700;
+      box-shadow: 0 8px 18px rgba(139,0,0,0.22);
+      transition: all 0.25s ease;
+    }
+
+    .download-btn:hover {
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(139,0,0,0.28);
+    }
+
+    .abstract-panel {
+      margin-top: 10px;
+      border: 1px solid #d8dde6;
+      border-radius: 8px;
+      overflow: hidden;
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      box-shadow: 0 16px 34px rgba(0,33,71,0.12);
+    }
+
+    .abstract-panel-body {
+      padding: 22px;
+    }
+
+    .abstract-action {
+      height: 100%;
+      padding: 18px;
+      border: 1px solid #e0e6ef;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 8px 20px rgba(0,33,71,0.07);
+    }
+
+    .abstract-action-icon {
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #8B0000;
+      background: #fff4d6;
+      border: 1px solid rgba(201,162,39,0.45);
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .abstract-action h6 {
+      color: #002147;
+      font-weight: 700;
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    .abstract-action p {
+      color: #4f5c6b;
+      margin-bottom: 14px;
+    }
+
+    .abstract-btn-secondary {
+      background: linear-gradient(135deg, #002147, #12365f);
+      box-shadow: 0 8px 18px rgba(0,33,71,0.22);
+    }
+
+    .abstract-btn-secondary:hover {
+      box-shadow: 0 12px 24px rgba(0,33,71,0.28);
+    }
+
+
+    .sponsorship-table th,
+    .ad-table th {
+      background: #002147;
+      color: #fff;
+      border-color: #153b66;
+      vertical-align: middle;
+    }
+
+    .sponsorship-table td,
+    .ad-table td {
+      vertical-align: top;
+      border-color: #b8d5df;
+    }
+
+    .sponsorship-table tbody tr:nth-child(odd) td,
+    .ad-table tbody tr:nth-child(odd) td {
+      background: #f5fcff;
+    }
+
+    .sponsorship-table ul {
+      margin-bottom: 0;
+      padding-left: 18px;
+    }
+
+    .sponsorship-note {
+      background: linear-gradient(135deg, #002147, #12365f);
+      color: #fff;
+      border-left: 5px solid #c9a227;
+      padding: 18px 20px;
+      border-radius: 8px;
+      margin-bottom: 22px;
+      box-shadow: 0 10px 24px rgba(0,33,71,0.16);
+    }
+
+    .sponsorship-note strong {
+      color: #FFD700;
+    }
+
+    .sponsor-mail-btn {
+      display: inline-block;
+      margin-top: 12px;
+      background: #FFD700;
+      color: #002147;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 9px 16px;
+      border-radius: 6px;
+    }
+
+    .sponsor-mail-btn:hover {
+      color: #002147;
+      background: #fff1a8;
+    }
+
+    .sponsor-tier-card {
+      height: 100%;
+      background: #fff;
+      border: 1px solid #d8dde6;
+      border-top: 5px solid #8B0000;
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 8px 22px rgba(0,33,71,0.09);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .sponsor-tier-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(0,33,71,0.16);
+    }
+
+    .tier-platinum { border-top-color: #7f8c9a; }
+    .tier-gold { border-top-color: #c9a227; }
+    .tier-silver { border-top-color: #aeb8c2; }
+    .tier-exhibitor { border-top-color: #8B0000; }
+
+    .sponsor-tier-name {
+      color: #002147;
+      font-weight: 800;
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    .sponsor-tier-amount {
+      color: #8B0000;
+      font-weight: 800;
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    .sponsor-tier-amount span {
+      display: block;
+      color: #555;
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .sponsor-tier-card ul {
+      padding-left: 0;
+      list-style: none;
+      margin-bottom: 0;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .sponsor-tier-card li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 7px;
+    }
+
+    .sponsor-tier-card li::before {
+      content: "\f00c";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      color: #8B0000;
+      font-size: 12px;
+    }
+
+    .contact-card {
+      height: 100%;
+      background: #fff;
+      border: 1px solid #d8dde6;
+      border-left: 5px solid #8B0000;
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 8px 22px rgba(0,33,71,0.08);
+    }
+
+    .contact-card h5 {
+      color: #002147;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .contact-card p {
+      margin-bottom: 8px;
+    }
+
+    .contact-card i {
+      color: #8B0000;
+      margin-right: 6px;
+    }
+
+    .logistics-block {
+      background: #fff;
+      border: 1px solid #d8dde6;
+      border-left: 4px solid #8B0000;
+      border-radius: 8px;
+      padding: 18px;
+      margin-bottom: 18px;
+      box-shadow: 0 6px 16px rgba(0,33,71,0.07);
+    }
+
+    .logistics-block h5 {
+      color: #002147;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .logistics-block h6 {
+      color: #8B0000;
+      font-weight: 700;
+      margin-top: 18px;
+      margin-bottom: 8px;
+    }
+
+    .logistics-block p {
+      text-align: justify;
+      margin-bottom: 10px;
+    }
+
+    #logisticsTabs {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      white-space: nowrap;
+      gap: 8px;
+      margin-bottom: 18px;
+      position: sticky;
+      top: 52px;
+      z-index: 10;
+      background: linear-gradient(180deg, #ffffff 0%, #f8f9fb 100%);
+      padding: 10px;
+      border: 1px solid #e4e7ec;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 33, 71, 0.08);
+    }
+
+    #logisticsTabs .nav-item {
+      flex: 0 0 auto;
+    }
+
+    #logisticsTabs .nav-link {
+      color: #002147;
+      background: #fff;
+      border: 1px solid #d8dde6;
+      border-radius: 6px;
+      padding: 10px 16px;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    #logisticsTabs .nav-link.active {
+      color: #fff;
+      border-color: #8B0000;
+      background: linear-gradient(135deg, #8B0000, #002147);
+      box-shadow: 0 8px 18px rgba(139,0,0,0.24);
+    }
+
+    .jodhpur-attraction .accordion-button {
+      background: #cfe4ff;
+      color: #002147;
+      font-weight: 600;
+      border-radius: 6px 6px 0 0;
+      box-shadow: none;
+    }
+
+    .jodhpur-attraction .accordion-button:not(.collapsed) {
+      background: #bcd7fb;
+      color: #002147;
+    }
+
+    .jodhpur-attraction .accordion-item {
+      border: 1px solid #b8d5fb;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .jodhpur-attraction .accordion-body {
+      background: #fff;
+      padding: 22px 25px;
+    }
+
+    .attraction-img {
+      width: 100%;
+      max-height: 260px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 18px;
+    }
+
+    .attraction-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px 28px;
+      margin: 24px 0;
+    }
+
+    .attraction-card {
+      border: 1px solid #d8dde6;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 8px 20px rgba(0,33,71,0.12);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .attraction-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 26px rgba(0,33,71,0.2);
+    }
+
+    .attraction-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .attraction-image-link {
+      display: block;
+      position: relative;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .attraction-image-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, rgba(0,33,71,0.08), rgba(0,33,71,0.34));
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 4vw, 46px);
+      font-style: italic;
+      font-weight: 600;
+      text-shadow: 0 3px 14px rgba(0,0,0,0.65);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .attraction-card-title {
+      display: block;
+      padding: 18px 22px 6px;
+      font-weight: 700;
+      color: #002147;
+      text-decoration: none;
+      text-align: left;
+      border-top: 3px solid #c9a227;
+      font-size: 24px;
+      line-height: 1.25;
+    }
+
+    .attraction-card-title:hover {
+      color: #8B0000;
+    }
+
+    .attraction-card-text {
+      color: #555;
+      padding: 0 22px 22px;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 767px) {
+      .attraction-gallery {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .attraction-card img {
+        height: 220px;
+      }
+
+      .attraction-card-title {
+        font-size: 20px;
+      }
+    }
+
+    .fauna-strip {
+      overflow: hidden;
+      padding: 8px 0 12px;
+      margin: 18px 0 20px;
+      position: relative;
+    }
+
+    .fauna-strip::before,
+    .fauna-strip::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 55px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .fauna-strip::before {
+      left: 0;
+      background: linear-gradient(90deg, #fff, transparent);
+    }
+
+    .fauna-strip::after {
+      right: 0;
+      background: linear-gradient(270deg, #fff, transparent);
+    }
+
+    .fauna-track {
+      display: flex;
+      gap: 12px;
+      width: max-content;
+      animation: faunaScroll 30s linear infinite;
+    }
+
+    .fauna-strip:hover .fauna-track {
+      animation-play-state: paused;
+    }
+
+    .fauna-strip img {
+      width: 190px;
+      height: 150px;
+      flex: 0 0 auto;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 3px solid #fff;
+      box-shadow: 0 8px 20px rgba(0,33,71,0.16);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .fauna-strip img:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 26px rgba(0,33,71,0.24);
+    }
+
+    @keyframes faunaScroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .fauna-title {
+      color: #002147;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 4px;
+      font-size: 18px;
+    }
+
+    .fauna-caption {
+      color: #555;
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .map-card {
+      margin-top: 22px;
+      border: 1px solid #d8dde6;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 10px 24px rgba(0,33,71,0.12);
+      background: #fff;
+    }
+
+    .map-card-header {
+      background: linear-gradient(135deg, #002147, #12365f);
+      color: #fff;
+      padding: 12px 16px;
+      font-weight: 700;
+      border-bottom: 3px solid #c9a227;
+    }
+
+    .map-frame {
+      width: 100%;
+      height: 360px;
+      border: 0;
+      display: block;
+    }
+
+    @media (max-width: 576px) {
+      .map-frame {
+        height: 280px;
+      }
+    }
+
+    .countdown-panel {
+      background: linear-gradient(135deg, #002147 0%, #12365f 52%, #8B0000 100%);
+      color: #fff;
+      padding: 22px;
+      border-radius: 10px;
+      border: 1px solid rgba(201,162,39,0.55);
+      box-shadow: 0 18px 35px rgba(0,33,71,0.22);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .countdown-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, rgba(255,255,255,0.16), transparent 38%);
+      pointer-events: none;
+    }
+
+    .countdown-panel-title {
+      position: relative;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #FFD700;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .countdown-panel-date {
+      position: relative;
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .countdown-panel .countdown-grid {
+      position: relative;
+    }
+
+    .important-date-list {
+      list-style-position: outside;
+      padding-left: 22px;
+      margin-bottom: 0;
+    }
+
+    .important-date-list li {
+      margin-bottom: 12px;
+      padding-left: 4px;
+    }
+
+    .important-date-row {
+      display: inline-grid;
+      grid-template-columns: 260px 170px;
+      column-gap: 8px;
+      align-items: baseline;
+      width: min(100%, 440px);
+    }
+
+    .important-date-value {
+      font-weight: 600;
+      color: #002147;
+      white-space: nowrap;
+    }
+
+    .date-status-badge {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 1px 7px;
+      border-radius: 999px;
+      background: #fff8dc;
+      border: 1px solid #c9a227;
+      color: #8B0000;
+      font-size: 12px;
+      font-weight: 700;
+      vertical-align: middle;
+    }
+
+    .important-date-value.flash-highlight {
+      display: inline-flex;
+      width: fit-content;
+      border: 1px solid #c9a227;
+      border-radius: 4px;
+      padding: 1px 8px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 767px) {
+      .dates-countdown {
+        max-width: none;
+        margin-left: 0;
+      }
+
+      .countdown-panel {
+        margin-top: 18px;
+        text-align: center;
+      }
+
+      .important-date-row {
+        grid-template-columns: 1fr;
+        row-gap: 3px;
+        width: auto;
+      }
+    }
+
+    /* Sections */
+    .section { padding:40px 0; }
+    section[id] { scroll-margin-top: 90px; }
+    .content-box {
+      background:#fff;
+      border:1px solid #ddd;
+      padding:25px;
+      border-radius:6px;
+    }
+
+    /* Scrollable tabs for mobile */
+    #aboutTabs {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      position: sticky;
+      top: 52px;
+      z-index: 10;
+      background: linear-gradient(180deg, #ffffff 0%, #f8f9fb 100%);
+      padding: 10px;
+      border: 1px solid #e4e7ec;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 33, 71, 0.08);
+      gap: 8px;
+    }
+
+    #aboutTabs .nav-item {
+      flex: 0 0 auto;
+    }
+
+    #aboutTabs .nav-link,
+    #committeeTabs .nav-link {
+      color: #002147;
+      background: #fff;
+      border: 1px solid #d8dde6;
+      border-radius: 6px;
+      padding: 10px 16px;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      transition: all 0.25s ease;
+    }
+
+    #aboutTabs .nav-link:hover,
+    #committeeTabs .nav-link:hover {
+      color: #8B0000;
+      border-color: #c9a227;
+      background: #fffdf5;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.09);
+    }
+
+    #aboutTabs .nav-link.active,
+    #committeeTabs .nav-link.active {
+      color: #fff;
+      border-color: #8B0000;
+      background: linear-gradient(135deg, #8B0000, #002147);
+      box-shadow: 0 8px 18px rgba(139,0,0,0.24);
+    }
+
+    #aboutTabs .nav-link:focus,
+    #committeeTabs .nav-link:focus {
+      box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.28);
+    }
+
+    #aboutTabs::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    #aboutTabs::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 10px;
+    }
+
+    #committeeTabs {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      position: sticky;
+      top: 52px;
+      z-index: 10;
+      background: linear-gradient(180deg, #ffffff 0%, #f8f9fb 100%);
+      padding: 10px;
+      border: 1px solid #e4e7ec;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 33, 71, 0.08);
+      gap: 8px;
+    }
+
+    #committeeTabs .nav-item {
+      flex: 0 0 auto;
+    }
+
+    #committeeTabs::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    #committeeTabs::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 10px;
+    }
+
+    .section-title {
+      border-left:5px solid #8B0000;
+      padding-left:10px;
+      margin-bottom:15px;
+      font-weight:bold;
+    }
+
+    /* Premium Social Bar */
+    .social-bar {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      z-index: 999;
+    }
+
+    .social-bar a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      margin: 6px 0;
+      color: #fff;
+      font-size: 20px;
+      border-radius: 30px 0 0 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    /* Hover expansion */
+    .social-bar a:hover {
+      width: 70px;
+      transform: translateX(-5px) scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Platform colors */
+    .social-linkedin { background:#0A66C2; }
+    .social-youtube { background:#FF0000; }
+    .social-instagram {
+      background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF,#515BD4);
+    }
+
+    /* Glow effect */
+    .social-linkedin:hover { box-shadow: 0 0 12px #0A66C2; }
+    .social-youtube:hover { box-shadow: 0 0 12px #FF0000; }
+    .social-instagram:hover { box-shadow: 0 0 12px #DD2A7B; }
+
+    footer {
+      background:#002147;
+      color:#fff;
+      padding:25px 0 10px;
+      font-size:14px;
+    }
+
+    .footer-top {
+      border-bottom:1px solid rgba(255,255,255,0.2);
+      padding-bottom:15px;
+      margin-bottom:10px;
+    }
+
+    .footer-links a {
+      color:#fff;
+      margin:0 10px;
+      text-decoration:none;
+      font-size:14px;
+    }
+
+    .footer-links a:hover {
+      text-decoration:underline;
+      color:#FFD700;
+    }
+
+    .footer-bottom {
+      font-size:13px;
+      color:#ccc;
+    }
+  
+    /* Committee (refined, stable) */
+    .committee-section .group-title {
+      margin-top: 30px;
+      margin-bottom: 25px; /* more gap before images */
+      font-weight: 600;
+      color: #002147;
+      text-align: center;
+      font-size: 18px;
+    }
+    .member {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .member-img {
+      width: 170px;
+      height: 200px;
+      object-fit: cover;
+      object-position: 50% 40%;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      padding: 3px; /* space for gradient border */
+      background: linear-gradient(135deg, #FFD700, #FFFFFF, #D4AF37);
+      transition: all 0.4s ease;
+      position: relative;
+}
+
+.member-img img {
+      border-radius: 6px;
+}
+
+/* Inner image adjustment */
+.member-img {
+      box-sizing: border-box;
+}
+
+/* Hover effect (kept premium but subtle) */
+.member-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+    /* Glow + shine effect */
+    .member-img:hover {
+      transform: scale(1.12);
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.8),
+                  0 0 25px rgba(255, 215, 0, 0.6);
+    }
+
+    .member-img::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
+      transform: skewX(-25deg);
+    }
+
+    .member-img:hover::after {
+      left: 125%;
+      transition: 0.7s;
+    }
+
+    /* Patron larger for hierarchy */
+    .img-patron {
+      width: 210px;
+      height: 210px;
+      object-position: 50% 38%;
+    }
+    /* Fine-tuned per role for better framing */
+    .img-patron { object-position: 50% 38%; }
+    .img-honorary {
+  object-position: 50% 65%;
+  image-rendering: auto;
+  /* remove fixed scale so hover works uniformly */
+}
+    .img-chair { object-position: 50% 42%; }
+
+/* FIXED: Proper uniform framing for both Conveners */
+.img-chair {
+  object-fit: cover;
+  object-position: center 30%; /* balanced face + shoulders */
+  transform: scale(1); /* remove zoom distortion */
+}
+
+/* Force consistent visible framing using inner crop */
+.member-img.img-chair {
+  padding: 3px; /* match frame thickness with others */
+}
+    .img-co { object-position: 50% 45%; }
+    .img-vikramsingh { object-position: 50% 28%; }
+    /* Adjust crop position for specific images */
+    .img-honorary {
+  object-position: 50% 65%;
+  image-rendering: auto;
+  /* remove fixed scale so hover works uniformly */
+}
+    .member-name {
+      font-weight: 600;
+      margin-top: 12px; /* uniform spacing from image */
+    }
+    .member-aff { color: #555; font-size: 14px; }
+    .committee-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .committee-name-card {
+      background: linear-gradient(180deg, #ffffff, #f7fbff);
+      border: 1px solid #d8dde6;
+      border-left: 4px solid #8B0000;
+      border-radius: 8px;
+      padding: 14px 16px;
+      box-shadow: 0 6px 16px rgba(0,33,71,0.08);
+      transition: all 0.25s ease;
+      text-align: center;
+    }
+
+    .committee-name-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(0,33,71,0.14);
+    }
+
+    .committee-name-card .member-name {
+      margin-top: 0;
+      color: #002147;
+      font-weight: 700;
+    }
+
+    .advisory-img {
+      width: 150px;
+      height: 170px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 8px;
+      border: 3px solid #fff;
+      box-shadow: 0 8px 18px rgba(0,33,71,0.16);
+      margin-bottom: 12px;
+    }
+
+    .member-img.img-advisory {
+      width: 170px;
+      height: 190px;
+      object-position: center top;
+    }
+
+    .img-khang {
+      object-position: center 18%;
+    }
+
+    .advisory-frame {
+      width: 170px;
+      height: 190px;
+      border-radius: 8px;
+      margin: 0 auto 8px;
+      padding: 3px;
+      background: linear-gradient(135deg, #FFD700, #FFFFFF, #D4AF37);
+      box-sizing: border-box;
+      overflow: hidden;
+      transition: all 0.4s ease;
+    }
+
+    .advisory-frame:hover {
+      transform: scale(1.12);
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.8),
+                  0 0 25px rgba(255, 215, 0, 0.6);
+    }
+
+    .advisory-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 6px;
+      display: block;
+    }
+
+    .advisory-frame .img-khang {
+      transform: scale(1.18);
+      transform-origin: center top;
+    }
+
+    .speaker-placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #8B0000;
+      background: linear-gradient(180deg, #fff8dc 0%, #ffffff 100%);
+      font-size: 46px;
+    }
+
+    .speaker-tentative {
+      display: inline-block;
+      margin-top: 4px;
+      color: #8B0000;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .speaker-strip {
+      overflow: hidden;
+      padding: 12px 0 18px;
+      margin-top: 10px;
+      position: relative;
+    }
+
+    .speaker-strip::before,
+    .speaker-strip::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 70px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .speaker-strip::before {
+      left: 0;
+      background: linear-gradient(90deg, #fff, transparent);
+    }
+
+    .speaker-strip::after {
+      right: 0;
+      background: linear-gradient(270deg, #fff, transparent);
+    }
+
+    .speaker-track {
+      display: flex;
+      gap: 24px;
+      width: max-content;
+      animation: speakerScroll 40s linear infinite;
+    }
+
+    .speaker-strip:hover .speaker-track {
+      animation-play-state: paused;
+    }
+
+    .speaker-card {
+      flex: 0 0 230px;
+      text-align: center;
+      padding: 8px 8px 12px;
+    }
+
+    .speaker-card .advisory-frame {
+      width: 170px;
+      height: 190px;
+      border-radius: 50%;
+      padding: 4px;
+    }
+
+    .speaker-card .advisory-frame img,
+    .speaker-card .speaker-placeholder {
+      border-radius: 50%;
+    }
+
+    @keyframes speakerScroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .committee-name-card .member-aff {
+      margin-top: 5px;
+    }
+
+    .local-committee-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .local-member-chip {
+      background: #fff;
+      border: 1px solid #d8dde6;
+      border-left: 4px solid #c9a227;
+      border-radius: 7px;
+      padding: 10px 12px;
+      color: #002147;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0,33,71,0.06);
+    }
+
+    .national-committee-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 22px;
+      justify-content: start;
+    }
+
+    .national-member-aff {
+      display: block;
+      color: #555;
+      font-weight: 400;
+      margin-top: 4px;
+    }
+
+    .iit-logo-right { height:80px; object-fit:contain; }
+
+/* Mobile refinements */
+@media (max-width: 991px) {
+  .navbar-nav {
+    padding: 8px 0;
+  }
+
+  .nav-tabs-custom .nav-link {
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .iit-header .container {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .iit-header .d-flex {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .iit-header img,
+  .iit-logo-right {
+    height: 62px;
+    margin-right: 0 !important;
+  }
+
+  .iit-title {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
+  .iit-subtitle {
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  .hero {
+    max-height: none;
+  }
+
+  .hero .carousel-item {
+    height: 56vh;
+    min-height: 360px;
+  }
+
+  .hero .carousel-item img,
+  .hero .carousel-item video,
+  .hero-video {
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .hero .carousel-item img.hero-mobile-contain {
+    object-fit: contain;
+    background: #000;
+  }
+
+  .hero-content {
+    padding: 14px 16px;
+    border-radius: 8px;
+  }
+
+  .hero-title {
+    letter-spacing: 0;
+  }
+
+  .section {
+    padding: 24px 0;
+  }
+
+  .content-box {
+    padding: 18px 14px;
+    border-radius: 0;
+  }
+
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  #aboutTabs,
+  #committeeTabs {
+    top: 50px;
+    margin-left: -6px;
+    margin-right: -6px;
+    border-radius: 6px;
+    padding: 8px;
+  }
+
+  #aboutTabs .nav-link,
+  #committeeTabs .nav-link {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .social-bar {
+    top: auto;
+    right: 12px;
+    bottom: 12px;
+    transform: none;
+    display: flex;
+    gap: 8px;
+  }
+
+  .social-bar a {
+    width: 42px;
+    height: 42px;
+    margin: 0;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+
+  .social-bar a:hover {
+    width: 42px;
+    transform: translateY(-2px);
+  }
+
+  .col-md-4.text-end {
+    text-align: left !important;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .countdown-value {
+    font-size: 28px;
+  }
+
+  .national-committee-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .member-img {
+    width: 150px;
+    height: 178px;
+  }
+
+  .img-patron {
+    width: 175px;
+    height: 175px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 12px;
+  }
+
+  .footer-links a {
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .national-committee-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero .carousel-item {
+    height: 52vh;
+    min-height: 330px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 12%;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 12px;
+  }
+
+  .table-responsive {
+    font-size: 14px;
+  }
+
+  .registration-table th,
+  .registration-table td {
+    min-width: 120px;
+    padding: 10px 8px;
+  }
+
+  .registration-table th:first-child,
+  .registration-table td:first-child {
+    min-width: 175px;
+  }
+
+  .fauna-strip img {
+    width: 160px;
+    height: 125px;
+  }
+
+  .fauna-track {
+    animation-duration: 24s;
+  }
+
+  .accordion-button {
+    font-size: 15px;
+    line-height: 1.35;
+  }
+
+  .committee-card-grid,
+  .local-committee-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  color: #002147;
+  font-size: 18px;
+  letter-spacing: 1px;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#preloader img {
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+}
+
+</style>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-THME9T4XE9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+
+    gtag('config', 'G-THME9T4XE9');
+  </script>
+</head>
+
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+  <img src="assets/images/iitj_logo.png" alt="IIT Jodhpur Logo">
+  <div>Loading i-CAM 2026...</div>
+</div>
+
+<!-- Social Bar -->
+<div class="social-bar">
+  <!-- Replace # with your actual social media links -->
+  <a href="https://www.linkedin.com/in/department-of-materials-engineering-iit-jodhpur-935703295/recent-activity/all/" target="_blank" class="social-linkedin"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://www.youtube.com/@IITJodhpurOfficial" target="_blank" class="social-youtube"><i class="fab fa-youtube"></i></a>
+  <a href="https://www.instagram.com/iitj_official_account/" target="_blank" class="social-instagram"><i class="fab fa-instagram"></i></a>
+</div>
+
+<!-- Header -->
+<div class="iit-header">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <img src="assets/images/iitj_logo.png" class="me-3">
+      <div>
+        <div class="iit-title">Department of Materials Engineering</div>
+        <div class="iit-subtitle">Indian Institute of Technology Jodhpur</div>
+      </div>
+    </div>
+    <img src="assets/images/icam_logo_hd.jpg" class="iit-logo-right">
+  </div>
+</div>
+
+<!-- Navigation (Hamburger for Mobile) -->
+<nav class="navbar navbar-expand-lg nav-tabs-custom sticky-top">
+  <div class="container">
+    <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#themes">Themes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#dates">Important Dates</a></li>
+        <li class="nav-item"><a class="nav-link" href="#committee">Committee</a></li>
+        <li class="nav-item"><a class="nav-link" href="#programme">Programme</a></li>
+        <li class="nav-item"><a class="nav-link" href="downloads.html">Downloads</a></li>
+        <li class="nav-item"><a class="nav-link" href="#abstract">Abstract</a></li>
+        <li class="nav-item"><a class="nav-link" href="#registration">Registration</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sponsorship">Sponsorship & Exhibition</a></li>
+        <li class="nav-item"><a class="nav-link" href="#logistics">Logistics</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" id="keyAttractionsNav">Key Attractions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Slider -->
+<section id="home" class="hero">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="hover">
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="5"></button>
+      
+    </div>
+
+    <div class="carousel-inner">
+
+      <!-- 1. IIT Jodhpur Identity -->
+      <div class="carousel-item active">
+        <img src="assets/images/iitj_aerial.jpg" class="hero-mobile-contain" alt="IIT Jodhpur Campus">
+      </div>
+
+      <!-- 2. Abstract Materials Visual -->
+      <div class="carousel-item">
+        <img src="assets/images/hero.jpeg" class="hero-mobile-contain" alt="Applied Materials">
+      </div>
+
+      <!-- 3. Advanced Nanomaterials -->
+      <div class="carousel-item">
+        <img src="assets/images/nano_red.jpeg" alt="Nanomaterials">
+      </div>
+
+      <!-- 4. Microstructure -->
+      <div class="carousel-item">
+        <img src="assets/images/microstructure.jpeg" alt="Microstructure">
+      </div>
+
+      <!-- 5. Functional / Polymer Materials -->
+      <div class="carousel-item">
+        <img src="assets/images/polymer.jpeg" alt="Polymer Materials">
+      </div>
+
+      <!-- 6. Video Slide -->
+      <div class="carousel-item">
+        <video id="heroVideo" class="w-100 h-100 hero-video" muted playsinline>
+          <source src="assets/videos/hero_video.mp4" type="video/mp4">
+          <source src="assets/videos/hero_video.mov" type="video/quicktime">
+        </video>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+
+  <div class="hero-content">
+    <h3 class="hero-subtitle">International Conference on Applied Materials</h3>
+    <h1 class="hero-title"><b><i>i</i>-CAM 2026</b></h1>
+    <p class="hero-date"><b>23-25 October 2026 | IIT Jodhpur</b></p>
+  </div>
+</section>
+
+<div class="news-ticker" aria-label="Conference news">
+  <div class="news-ticker-inner">
+    <div class="news-marquee">
+      <span>Abstract submission is now closed. Submitted abstracts are currently under review, and acceptance notifications will be communicated soon.</span>
+    </div>
+  </div>
+</div>
+
+<!-- About (Tabbed Section) -->
+<section id="about" class="section">
+  <div class="container content-box">
+    <h4 class="section-title">About</h4>
+
+    <!-- Tabs -->
+    <ul class="nav nav-pills mb-3" id="aboutTabs">
+      <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#about1">About the Conference</button></li>
+      
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#about3">About DME</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#about4">About IIT Jodhpur</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#about5">About Jodhpur</button></li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="about1">
+        <p style="text-align: justify;">The <i>i</i>-CAM 2026 meet aims to bring together leading researchers, academicians, and industry professionals from across the globe to discuss advances in various aspects of applied materials. The three-day programme will feature plenary lectures, keynote lectures, and scientifically enriching invited and contributed talks, along with interactive poster sessions.</p>
+      </div>
+
+      
+
+      <div class="tab-pane fade" id="about3">
+        <p style="text-align: justify;">
+        The Department of Materials Engineering at IIT Jodhpur was established in 2017, and the Department is committed to high-quality education and research in the broad area of Materials Engineering. The Department continuously strives for excellence in teaching and research through innovative pedagogy and curriculum, by undertaking interdisciplinary projects, and through active collaborations with industries, R&D labs, and academia. By enabling the students to think independently and equipping them with relevant skill sets, our goal is to encourage the graduates to innovate and address present-day materials challenges to meet the needs of the country.
+        </p>
+
+        <p style="text-align: justify;">
+        At present, the Department offers B.Tech., M.Tech., and Ph.D. programs. The Department's teaching and research activities cover four major streams- structural materials, functional materials, computational materials engineering, and process metallurgy. From structural materials to semiconductors, we attempt to understand the processing, composition and structure, properties, and performance of materials for deriving novel, effective, and sustainable alternatives. Currently, efforts are being made to introduce advanced concepts such as smart materials, additive manufacturing, artificial intelligence and machine learning, sensor materials, etc., as a part of solving interdisciplinary problems requiring Materials Engineering knowledge.
+        </p>
+      </div>
+
+      <div class="tab-pane fade" id="about4">
+        <div class="text-center mb-3">
+          <img src="assets/images/iitj_campus2.png" alt="IIT Jodhpur Campus" style="width:100%; aspect-ratio: 16/7; object-fit:cover; border-radius:6px;">
+        </div>
+        <p style="text-align: justify;">
+        Indian Institute of Technology Jodhpur was established in 2008 to foster technology education and research in India. The Institute is committed to technological thought and action to benefit the economic development of the country. Scholarship in teaching and learning, scholarship in research and creative accomplishments, and relevance to industry are the three driving forces at IIT Jodhpur.
+        </p>
+
+        <p style="text-align: justify;">
+        IIT Jodhpur functions from its sprawling residential permanent campus of 852 acres on National Highway 65, north-northwest of Jodhpur towards Nagaur. This campus is meticulously planned and envisioned to stand as a symbol of academics - simple yet profound.
+        </p>
+
+        <p style="text-align: justify;">
+        The Institute is committed to a multidisciplinary approach to technology development. Hence, it has established state-of-the-art laboratories for basic research and has organised its academic degree programs through departments, while coordinating research activities through Centers for Technologies.
+        </p>
+
+        <div class="fauna-title">Glimpses of Campus Biodiversity</div>
+        <p class="fauna-caption">The IIT Jodhpur campus is home to diverse desert flora and fauna, reflecting the natural ecology of western Rajasthan.</p>
+
+        <div class="fauna-strip" aria-label="Fauna of IIT Jodhpur campus">
+          <div class="fauna-track">
+            <img src="assets/images/ff1.jpg" alt="Fauna of IIT Jodhpur campus">
+            <img src="assets/images/ff2.jpg" alt="Fauna of IIT Jodhpur campus">
+            <img src="assets/images/ff3.jpg" alt="Fauna of IIT Jodhpur campus">
+            <img src="assets/images/ff4.jpeg" alt="Fauna of IIT Jodhpur campus">
+            <img src="assets/images/ff5.jpg" alt="Fauna of IIT Jodhpur campus">
+            <img src="assets/images/ff6.jpg" alt="Fauna of IIT Jodhpur campus">
+            <img src="assets/images/ff7.jpg" alt="Fauna of IIT Jodhpur campus">
+            <img src="assets/images/ff1.jpg" alt="Fauna of IIT Jodhpur campus">
+            <img src="assets/images/ff2.jpg" alt="Fauna of IIT Jodhpur campus">
+            <img src="assets/images/ff3.jpg" alt="Fauna of IIT Jodhpur campus">
+            <img src="assets/images/ff4.jpeg" alt="Fauna of IIT Jodhpur campus">
+            <img src="assets/images/ff5.jpg" alt="Fauna of IIT Jodhpur campus">
+            <img src="assets/images/ff6.jpg" alt="Fauna of IIT Jodhpur campus">
+            <img src="assets/images/ff7.jpg" alt="Fauna of IIT Jodhpur campus">
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="about5">
+        <div class="text-center mb-3">
+          <img src="assets/images/jodhpur.jpg" alt="Jodhpur City" style="width:100%; aspect-ratio: 7795 / 3838; object-fit:cover; border-radius:6px;">
+        </div>
+        <p style="text-align: justify;"><strong>About Jodhpur: The Blue City</strong><br>
+        Jodhpur, the second-largest city in Rajasthan, is a captivating blend of ancient history and modern dynamism. Known globally as the "Blue City" for the iconic azure-hued houses surrounding the majestic Mehrangarh Fort, it offers a glimpse into India's rich royal heritage and architectural brilliance.
+        </p>
+
+        <p style="text-align: justify;"><strong>Historical Grandeur</strong><br>
+        Founded in 1459 by Rao Jodha, the city served as the capital of the Marwar kingdom. Today, it stands as a testament to Rajputana courage and artistic finesse. The city's skyline is dominated by Mehrangarh Fort, one of the largest and most well-preserved forts in India, offering breathtaking views of the "Blue City" below.
+        </p>
+
+        <div class="accordion jodhpur-attraction mt-4" id="jodhpurAttractions">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="keyAttractionsHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#keyAttractionsCollapse" aria-expanded="false" aria-controls="keyAttractionsCollapse">
+                Key Attractions
+              </button>
+            </h2>
+            <div id="keyAttractionsCollapse" class="accordion-collapse collapse" aria-labelledby="keyAttractionsHeading" data-bs-parent="#jodhpurAttractions">
+              <div class="accordion-body">
+                <div class="attraction-gallery" aria-label="Jodhpur and nearby attractions">
+                  <div class="attraction-card">
+                    <a href="https://www.mehrangarh.org/" target="_blank" rel="noopener">
+                      <img src="assets/images/fort.jpg" alt="Mehrangarh Fort">
+                    </a>
+                    <a href="https://www.mehrangarh.org/" target="_blank" rel="noopener" class="attraction-card-title">Mehrangarh Fort</a>
+                    <div class="attraction-card-text">A formidable citadel housing intricate palaces, sprawling courtyards, and a world-class museum.</div>
+                  </div>
+                  <div class="attraction-card">
+                    <a href="https://www.mehrangarh.org/visit/jaswant-thada/" target="_blank" rel="noopener">
+                      <img src="assets/images/Jaswnt.jpg" alt="Jaswant Thada">
+                    </a>
+                    <a href="https://www.mehrangarh.org/visit/jaswant-thada/" target="_blank" rel="noopener" class="attraction-card-title">Jaswant Thada</a>
+                    <div class="attraction-card-text">An elegant white marble cenotaph, often referred to as the "Taj Mahal of Marwar," situated amidst serene lakeside gardens.</div>
+                  </div>
+                  <div class="attraction-card">
+                    <a href="https://www.tajhotels.com/en-in/hotels/umaid-bhawan-palace-jodhpur" target="_blank" rel="noopener">
+                      <img src="assets/images/Umaid Bhawan Palace.jpg" alt="Umaid Bhawan Palace">
+                    </a>
+                    <a href="https://www.tajhotels.com/en-in/hotels/umaid-bhawan-palace-jodhpur" target="_blank" rel="noopener" class="attraction-card-title">Umaid Bhawan Palace</a>
+                    <div class="attraction-card-text">A magnificent 20th-century palace that remains the principal residence of Jodhpur's royal family and is one of the largest private residences in the world.</div>
+                  </div>
+                  <div class="attraction-card">
+                    <img src="assets/images/Clock tower.jpg" alt="Old City and Clock Tower">
+                    <div class="attraction-card-title">Old City & Clock Tower</div>
+                    <div class="attraction-card-text">A vibrant hub of traditional markets, where delegates can experience the colors, spices, and famous textiles of Rajasthan.</div>
+                  </div>
+                  <div class="attraction-card">
+                    <img src="assets/images/Osian.jpeg" alt="Osian Ancient Desert Oasis">
+                    <div class="attraction-card-title">Osian (Ancient Desert Oasis)</div>
+                    <div class="attraction-card-text">Located just 48 km from the IIT Jodhpur campus, Osian is an ancient desert town known as the "Khajuraho of Rajasthan" and is a spectacular day-trip destination.</div>
+                  </div>
+                  <div class="attraction-card">
+                    <a href="https://www.tourism.rajasthan.gov.in/jodhpur.html" target="_blank" rel="noopener" class="attraction-image-link">
+                      <img src="assets/images/rajasthan-explore-more.png" alt="Explore more attractions in Jodhpur and Rajasthan">
+                      <span class="attraction-image-overlay">Explore Rajasthan</span>
+                    </a>
+                    <a href="https://www.tourism.rajasthan.gov.in/jodhpur.html" target="_blank" rel="noopener" class="attraction-card-title">Explore More</a>
+                    <div class="attraction-card-text">Discover more heritage sites, desert experiences, local markets, and cultural highlights around Jodhpur through Rajasthan Tourism.</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p style="text-align: justify; margin-top: 10px;">
+        <em>We look forward to welcoming you to this historic desert jewel.</em>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Themes -->
+<section id="themes" class="section">
+  <div class="container content-box">
+    <h4 class="section-title">Themes</h4>
+    <ul>
+      <li><strong>Advanced Materials Processing and Manufacturing</strong></li>
+      <li><strong>Sustainable, Green, and Circular Materials</strong></li>
+      <li><strong>Porous, Foam, and Aerogel-Based Materials</strong></li>
+      <li><strong>High-Performance Structural Materials and Reinforced Composites</strong></li>
+      <li><strong>Functional Nanomaterials and Devices</strong></li>
+      <li><strong>Materials for Biomedical and Healthcare Applications</strong></li>
+      <li><strong>Energy Materials for Conversion, Storage, and Devices</strong></li>
+      <li><strong>Artificial Intelligence, Machine Learning, and Big Data in Materials Engineering</strong></li>
+      <li><strong>Electronic, Photonic, Quantum Materials</strong></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Speakers -->
+<section id="speakers" class="section">
+  <div class="container content-box">
+    <h4 class="section-title">Speakers</h4>
+    <div class="speaker-strip" aria-label="i-CAM 2026 Speakers">
+      <div class="speaker-track">
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Akos Kukovecz1.jpg" alt="Prof. Akos Kukovecz">
+          </div>
+          <div class="member-name">Prof. Akos Kukovecz</div>
+          <div class="member-aff">University of Szeged, Hungary</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Eiji Abe.png" alt="Prof. Eiji Abe">
+          </div>
+          <div class="member-name">Prof. Eiji Abe</div>
+          <div class="member-aff">The University of Tokyo, Japan</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Felix Sunjoo Kim1.jpg" alt="Prof. Felix Sunjoo Kim">
+          </div>
+          <div class="member-name">Prof. Felix Sunjoo Kim</div>
+          <div class="member-aff">Chung-Ang University, South&nbsp;Korea</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Ghatu Subhash.jpg" alt="Prof. Ghatu Subhash">
+          </div>
+          <div class="member-name">Prof. Ghatu Subhash</div>
+          <div class="member-aff">University of Florida, USA</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame speaker-placeholder">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="member-name">Prof. Hiroyuki Nakamura</div>
+          <div class="member-aff">Kyoto University, Japan</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Simon Redfern.jfif" alt="Prof. Simon Redfern">
+          </div>
+          <div class="member-name">Prof. Simon Redfern</div>
+          <div class="member-aff">NTU Singapore</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Sankha Roychowdhury.png" alt="Dr. Sankha Roychowdhury">
+          </div>
+          <div class="member-name">Dr. Sankha Roychowdhury</div>
+          <div class="member-aff">Rollepaal Pipe Extrusion Technology B.V., Netherlands</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Sunil Chandrakant Joshi.jpeg" alt="Prof. Sunil C. Joshi">
+          </div>
+          <div class="member-name">Prof. Sunil C. Joshi</div>
+          <div class="member-aff">NTU Singapore</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Amritendu Roy.png" alt="Dr. Amritendu Roy">
+          </div>
+          <div class="member-name">Dr. Amritendu Roy</div>
+          <div class="member-aff">IIT Bhubaneswar</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. A Nagesha.jfif" alt="Dr. A Nagesha">
+          </div>
+          <div class="member-name">Dr. A Nagesha</div>
+          <div class="member-aff">Indira Gandhi Centre for Atomic Research Chennai</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. G. Arthanareeswaran" alt="Prof. G. Arthanareeswaran">
+          </div>
+          <div class="member-name">Prof. G. Arthanareeswaran</div>
+          <div class="member-aff">NIT Tiruchirappalli</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Amit Rawal.webp" alt="Prof. Amit Rawal">
+          </div>
+          <div class="member-name">Prof. Amit Rawal</div>
+          <div class="member-aff">IIT Delhi</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Hemlata.jpg" alt="Dr. Hemlata">
+          </div>
+          <div class="member-name">Dr. Hemlata</div>
+          <div class="member-aff">CSIR-CBRI, Roorkee</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Jangannath Chanda.jfif" alt="Dr. Jangannath Chanda">
+          </div>
+          <div class="member-name">Dr. Jangannath Chanda</div>
+          <div class="member-aff">IDE2RE India Pvt. Ltd.</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof Kuldeep Kumar Raina.jfif" alt="Prof. Kuldeep Kumar Raina">
+          </div>
+          <div class="member-name">Prof. Kuldeep Kumar Raina</div>
+          <div class="member-aff">Vice Chancellor, RUAS, Bangalore</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Makarand Joshi.jpg" alt="Dr. Makarand Joshi">
+          </div>
+          <div class="member-name">Dr. Makarand Joshi</div>
+          <div class="member-aff">Director, R&amp;DE(E), Pune</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr_Ranjith_AP.png" alt="Dr. Ranjith Thangavel">
+          </div>
+          <div class="member-name">Dr. Ranjith Thangavel</div>
+          <div class="member-aff">IIT Tirupati</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Lokesh Saini.png" alt="Dr. Lokesh Saini">
+          </div>
+          <div class="member-name">Dr. Lokesh Saini</div>
+          <div class="member-aff">Defence Laboratory, DRDO, Jodhpur</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Pralay Maiti.webp" alt="Prof. Pralay Maiti">
+          </div>
+          <div class="member-name">Prof. Pralay Maiti</div>
+          <div class="member-aff">IIT(BHU), Varanasi</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/praveen kumar.jpg" alt="Prof. Praveen Kumar">
+          </div>
+          <div class="member-name">Prof. Praveen Kumar</div>
+          <div class="member-aff">IISc Bangalore</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Sampa Saha.jpg" alt="Prof. Sampa Saha">
+          </div>
+          <div class="member-name">Prof. Sampa Saha</div>
+          <div class="member-aff">IIT Delhi</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Sachin Tyagi.jpg" alt="Dr. Sachin Tyagi">
+          </div>
+          <div class="member-name">Dr. Sachin Tyagi</div>
+          <div class="member-aff">CSIR-CSIO, Chandigarh</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Superb Kumar Misra.jpg" alt="Prof. Superb Kumar Misra">
+          </div>
+          <div class="member-name">Prof. Superb Kumar Misra</div>
+          <div class="member-aff">IIT Gandhinagar</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/skb.jpg" alt="Prof. Sushanta Kumar Badamali">
+          </div>
+          <div class="member-name">Prof. Sushanta Kumar Badamali</div>
+          <div class="member-aff">Utkal University, Bhubaneswar</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Tamoghna Chakrabarti.jpg" alt="Dr. Tamoghna Chakrabarti">
+          </div>
+          <div class="member-name">Dr. Tamoghna Chakrabarti</div>
+          <div class="member-aff">IIT Patna</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Shib Shankar Banerjee.png" alt="Dr. Shib Shankar Banerjee">
+          </div>
+          <div class="member-name">Dr. Shib Shankar Banerjee</div>
+          <div class="member-aff">IIT Delhi</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Rajiv Kumar.jpg" alt="Dr. Rajiv Kumar">
+          </div>
+          <div class="member-name">Dr. Rajiv Kumar</div>
+          <div class="member-aff">IIT Ropar</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Shobit Omar.jpg" alt="Prof. Shobit Omar">
+          </div>
+          <div class="member-name">Prof. Shobit Omar</div>
+          <div class="member-aff">IIT Kanpur</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame speaker-placeholder">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="member-name">Dr. Anuradha Bera</div>
+          <div class="member-aff">Defence Laboratory, DRDO, Jodhpur<br><span class="speaker-tentative">Tentative</span></div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Dahl-Young Khang.jpg" alt="Prof. Dahl-Young Khang">
+          </div>
+          <div class="member-name">Prof. Dahl-Young Khang</div>
+          <div class="member-aff">Yonsei University, South&nbsp;Korea<br><span class="speaker-tentative">Tentative</span></div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Ipsita Roy.jpg" alt="Prof. Ipsita Roy">
+          </div>
+          <div class="member-name">Prof. Ipsita Roy</div>
+          <div class="member-aff">University of Sheffield, UK<br><span class="speaker-tentative">Tentative</span></div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Akos Kukovecz1.jpg" alt="Prof. Akos Kukovecz">
+          </div>
+          <div class="member-name">Prof. Akos Kukovecz</div>
+          <div class="member-aff">University of Szeged, Hungary</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Eiji Abe.png" alt="Prof. Eiji Abe">
+          </div>
+          <div class="member-name">Prof. Eiji Abe</div>
+          <div class="member-aff">The University of Tokyo, Japan</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Felix Sunjoo Kim1.jpg" alt="Prof. Felix Sunjoo Kim">
+          </div>
+          <div class="member-name">Prof. Felix Sunjoo Kim</div>
+          <div class="member-aff">Chung-Ang University, South&nbsp;Korea</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Ghatu Subhash.jpg" alt="Prof. Ghatu Subhash">
+          </div>
+          <div class="member-name">Prof. Ghatu Subhash</div>
+          <div class="member-aff">University of Florida, USA</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame speaker-placeholder">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="member-name">Prof. Hiroyuki Nakamura</div>
+          <div class="member-aff">Kyoto University, Japan</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Simon Redfern.jfif" alt="Prof. Simon Redfern">
+          </div>
+          <div class="member-name">Prof. Simon Redfern</div>
+          <div class="member-aff">NTU Singapore</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Sankha Roychowdhury.png" alt="Dr. Sankha Roychowdhury">
+          </div>
+          <div class="member-name">Dr. Sankha Roychowdhury</div>
+          <div class="member-aff">Rollepaal Pipe Extrusion Technology B.V., Netherlands</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Sunil Chandrakant Joshi.jpeg" alt="Prof. Sunil C. Joshi">
+          </div>
+          <div class="member-name">Prof. Sunil C. Joshi</div>
+          <div class="member-aff">NTU Singapore</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Amritendu Roy.png" alt="Dr. Amritendu Roy">
+          </div>
+          <div class="member-name">Dr. Amritendu Roy</div>
+          <div class="member-aff">IIT Bhubaneswar</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. A Nagesha.jfif" alt="Dr. A Nagesha">
+          </div>
+          <div class="member-name">Dr. A Nagesha</div>
+          <div class="member-aff">Indira Gandhi Centre for Atomic Research Chennai</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. G. Arthanareeswaran" alt="Prof. G. Arthanareeswaran">
+          </div>
+          <div class="member-name">Prof. G. Arthanareeswaran</div>
+          <div class="member-aff">NIT Tiruchirappalli</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Amit Rawal.webp" alt="Prof. Amit Rawal">
+          </div>
+          <div class="member-name">Prof. Amit Rawal</div>
+          <div class="member-aff">IIT Delhi</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Hemlata.jpg" alt="Dr. Hemlata">
+          </div>
+          <div class="member-name">Dr. Hemlata</div>
+          <div class="member-aff">CSIR-CBRI, Roorkee</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Jangannath Chanda.jfif" alt="Dr. Jangannath Chanda">
+          </div>
+          <div class="member-name">Dr. Jangannath Chanda</div>
+          <div class="member-aff">IDE2RE India Pvt. Ltd.</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof Kuldeep Kumar Raina.jfif" alt="Prof. Kuldeep Kumar Raina">
+          </div>
+          <div class="member-name">Prof. Kuldeep Kumar Raina</div>
+          <div class="member-aff">Vice Chancellor, RUAS, Bangalore</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Makarand Joshi.jpg" alt="Dr. Makarand Joshi">
+          </div>
+          <div class="member-name">Dr. Makarand Joshi</div>
+          <div class="member-aff">Director, R&amp;DE(E), Pune</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr_Ranjith_AP.png" alt="Dr. Ranjith Thangavel">
+          </div>
+          <div class="member-name">Dr. Ranjith Thangavel</div>
+          <div class="member-aff">IIT Tirupati</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Lokesh Saini.png" alt="Dr. Lokesh Saini">
+          </div>
+          <div class="member-name">Dr. Lokesh Saini</div>
+          <div class="member-aff">Defence Laboratory, DRDO, Jodhpur</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Pralay Maiti.webp" alt="Prof. Pralay Maiti">
+          </div>
+          <div class="member-name">Prof. Pralay Maiti</div>
+          <div class="member-aff">IIT(BHU), Varanasi</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/praveen kumar.jpg" alt="Prof. Praveen Kumar">
+          </div>
+          <div class="member-name">Prof. Praveen Kumar</div>
+          <div class="member-aff">IISc Bangalore</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Sampa Saha.jpg" alt="Prof. Sampa Saha">
+          </div>
+          <div class="member-name">Prof. Sampa Saha</div>
+          <div class="member-aff">IIT Delhi</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Sachin Tyagi.jpg" alt="Dr. Sachin Tyagi">
+          </div>
+          <div class="member-name">Dr. Sachin Tyagi</div>
+          <div class="member-aff">CSIR-CSIO, Chandigarh</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Superb Kumar Misra.jpg" alt="Prof. Superb Kumar Misra">
+          </div>
+          <div class="member-name">Prof. Superb Kumar Misra</div>
+          <div class="member-aff">IIT Gandhinagar</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/skb.jpg" alt="Prof. Sushanta Kumar Badamali">
+          </div>
+          <div class="member-name">Prof. Sushanta Kumar Badamali</div>
+          <div class="member-aff">Utkal University, Bhubaneswar</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Tamoghna Chakrabarti.jpg" alt="Dr. Tamoghna Chakrabarti">
+          </div>
+          <div class="member-name">Dr. Tamoghna Chakrabarti</div>
+          <div class="member-aff">IIT Patna</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Shib Shankar Banerjee.png" alt="Dr. Shib Shankar Banerjee">
+          </div>
+          <div class="member-name">Dr. Shib Shankar Banerjee</div>
+          <div class="member-aff">IIT Delhi</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Dr. Rajiv Kumar.jpg" alt="Dr. Rajiv Kumar">
+          </div>
+          <div class="member-name">Dr. Rajiv Kumar</div>
+          <div class="member-aff">IIT Ropar</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Shobit Omar.jpg" alt="Prof. Shobit Omar">
+          </div>
+          <div class="member-name">Prof. Shobit Omar</div>
+          <div class="member-aff">IIT Kanpur</div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame speaker-placeholder">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="member-name">Dr. Anuradha Bera</div>
+          <div class="member-aff">Defence Laboratory, DRDO, Jodhpur<br><span class="speaker-tentative">Tentative</span></div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Dahl-Young Khang.jpg" alt="Prof. Dahl-Young Khang">
+          </div>
+          <div class="member-name">Prof. Dahl-Young Khang</div>
+          <div class="member-aff">Yonsei University, South&nbsp;Korea<br><span class="speaker-tentative">Tentative</span></div>
+        </div>
+        <div class="speaker-card">
+          <div class="advisory-frame">
+            <img src="assets/images/Prof. Ipsita Roy.jpg" alt="Prof. Ipsita Roy">
+          </div>
+          <div class="member-name">Prof. Ipsita Roy</div>
+          <div class="member-aff">University of Sheffield, UK<br><span class="speaker-tentative">Tentative</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dates -->
+<section id="dates" class="section">
+  <div class="container content-box">
+    <div class="row">
+      
+      <!-- Left: Important Dates -->
+      <div class="col-md-8">
+        <h4 class="section-title">Important Dates</h4>
+        <ul class="important-date-list">
+          <li><span class="important-date-row"><strong>Abstract Submission Opening:</strong> <span class="important-date-value">01 June 2026</span></span></li>
+          <li><span class="important-date-row"><strong>Abstract Submission Last Date:</strong> <span class="important-date-value">05 Aug 2026</span></span></li>
+          <li><span class="important-date-row"><strong>Abstract Acceptance Notification:</strong> <span class="important-date-value">16 August 2026 <span class="date-status-badge">Updated</span></span></span></li>
+          <li><span class="important-date-row"><strong>Early Bird Registration Start Date:</strong> <span class="important-date-value">13 August 2026 <span class="date-status-badge">Updated</span></span></span></li>
+          <li><span class="important-date-row"><strong>Early Bird Registration Last Date:</strong> <span class="important-date-value">15 September 2026</span></span></li>
+          <li><span class="important-date-row"><strong>Regular Registration Start Date:</strong> <span class="important-date-value">16 September 2026</span></span></li>
+          <li><span class="important-date-row"><strong>Regular Registration Last Date:</strong> <span class="important-date-value">10 October 2026</span></span></li>
+        </ul>
+      </div>
+
+      <!-- Right: Countdown -->
+      <div class="col-md-4 text-end">
+        <div class="countdown-panel">
+          <div class="countdown-panel-title">Conference Starts On</div>
+          <div class="countdown-panel-date">23 October 2026</div>
+          <div class="countdown-grid dates-countdown">
+            <div class="countdown-box">
+              <span class="countdown-value" id="dateDays">0</span>
+              <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-value" id="dateHours">0</span>
+              <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-value" id="dateMinutes">0</span>
+              <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-value" id="dateSeconds">0</span>
+              <span class="countdown-label">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  const countdownDate = new Date("Oct 23, 2026 00:00:00").getTime();
+
+  function setCountdownValue(id, value) {
+    const el = document.getElementById(id);
+    if (el) el.innerText = value;
+  }
+
+  const x = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    setCountdownValue("dateDays", days);
+    setCountdownValue("dateHours", hours);
+    setCountdownValue("dateMinutes", minutes);
+    setCountdownValue("dateSeconds", seconds);
+
+    if (distance < 0) {
+      clearInterval(x);
+      ["dateDays", "dateHours", "dateMinutes", "dateSeconds"].forEach(function (id) {
+        setCountdownValue(id, 0);
+      });
+    }
+  }, 1000);
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('#aboutTabs button[data-bs-toggle="pill"]').forEach(function (tabButton) {
+      tabButton.addEventListener('shown.bs.tab', function () {
+        const aboutContent = document.querySelector('#about .tab-content');
+        const stickyOffset = 120;
+
+        if (aboutContent) {
+          const top = aboutContent.getBoundingClientRect().top + window.pageYOffset - stickyOffset;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    document.querySelectorAll('#committeeTabs button[data-bs-toggle="pill"]').forEach(function (tabButton) {
+      tabButton.addEventListener('shown.bs.tab', function () {
+        const committeeSection = document.querySelector('#committee');
+        const stickyOffset = 90;
+
+        if (committeeSection) {
+          const top = committeeSection.getBoundingClientRect().top + window.pageYOffset - stickyOffset;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      });
+    });
+  });
+</script>
+
+<!-- Committee -->
+<section id="committee" class="section">
+  <div class="container content-box committee-section">
+    <h4 class="section-title">Committee</h4>
+
+    <!-- Tabs -->
+    <ul class="nav nav-pills mb-3" id="committeeTabs">
+      <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#core">Core Organizing Committee</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#international">International Advisory Committee</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#national">National Advisory Committee</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#local">Local Organizing Committee</button></li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+
+      <!-- Core Organizing Committee -->
+      <div class="tab-pane fade show active" id="core">
+
+        <div class="group-title">Patron</div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 member">
+            <img src="assets/images/patron.jpg" class="member-img img-patron">
+            <div class="member-name">Prof. Avinash Kumar Agarwal</div>
+            <div class="member-aff">Director, IIT Jodhpur</div>
+          </div>
+        </div>
+
+        <div class="group-title">Organizing Chair</div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 member">
+            <img src="assets/images/Honorary Organizing Chair.jpg" class="member-img img-honorary">
+            <div class="member-name">Prof. Bhabani Kumar Satapathy</div>
+            <div class="member-aff">Deputy Director, IIT Jodhpur<br>Head, Department of Materials Engineering</div>
+          </div>
+        </div>
+
+        <div class="group-title">Conveners</div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 member">
+            <img src="assets/images/Ravi-Prakash-Srivastava.jpg" class="member-img img-chair">
+            <div class="member-name">Dr. Ravi Prakash Srivastava</div>
+            <div class="member-aff">Department of Materials Engineering<br>IIT Jodhpur</div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 member">
+            <img src="assets/images/Abir-Bhattacharyya.jpg" class="member-img img-chair">
+            <div class="member-name">Dr. Abir Bhattacharyya</div>
+            <div class="member-aff">Department of Materials Engineering<br>IIT Jodhpur</div>
+          </div>
+        </div>
+
+        <div class="group-title">Co-Conveners</div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 member">
+            <img src="assets/images/Saurabh-Nene.jpg" class="member-img img-co">
+            <div class="member-name">Dr. Saurabh Nene</div>
+            <div class="member-aff">Department of Materials Engineering<br>IIT Jodhpur</div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 member">
+            <img src="assets/images/Vikramsingh-Rajendrasingh-Thakur.jpg" class="member-img img-co img-vikramsingh">
+            <div class="member-name">Dr. Vikramsingh Rajendrasingh Thakur</div>
+            <div class="member-aff">Department of Materials Engineering<br>IIT Jodhpur</div>
+          </div>
+        </div>
+
+        <div class="group-title">Organizing Secretary</div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 member">
+            <img src="assets/images/Anurag-Sharma.png" class="member-img img-co" alt="Dr. Anurag Sharma">
+            <div class="member-name">Dr. Anurag Sharma</div>
+            <div class="member-aff">Department of Materials Engineering<br>IIT Jodhpur</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- International Advisory Committee -->
+      <div class="tab-pane fade" id="international">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Akos Kukovecz1.jpg" alt="Prof. Akos Kukovecz">
+            </div>
+            <div class="member-name">Prof. Akos Kukovecz</div>
+            <div class="member-aff">University of Szeged, Hungary</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Dahl-Young Khang.jpg" class="img-khang" alt="Prof. Dahl-Young Khang">
+            </div>
+            <div class="member-name">Prof. Dahl-Young Khang</div>
+            <div class="member-aff">Yonsei University, Seoul, South Korea</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Dileep Singh.jpg" alt="Dr. Dileep Singh">
+            </div>
+            <div class="member-name">Dr. Dileep Singh</div>
+            <div class="member-aff">Argonne National Laboratory, USA</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Easo George.jpg" alt="Prof. Easo George">
+            </div>
+            <div class="member-name">Prof. Easo George</div>
+            <div class="member-aff">University of Tennessee, USA</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Eran Bouchbinder2.jpg" alt="Prof. Eran Bouchbinder">
+            </div>
+            <div class="member-name">Prof. Eran Bouchbinder</div>
+            <div class="member-aff">Weizmann Institute of Science, Israel</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Felix Sunjoo Kim1.jpg" alt="Prof. Felix Sunjoo Kim">
+            </div>
+            <div class="member-name">Prof. Felix Sunjoo Kim</div>
+            <div class="member-aff">Chung-Ang University, Seoul, South Korea</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Ghatu Subhash.jpg" alt="Prof. Ghatu Subhash">
+            </div>
+            <div class="member-name">Prof. Ghatu Subhash</div>
+            <div class="member-aff">University of Florida, USA</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Minna Hakkarainen.jpeg" alt="Prof. Minna Hakkarainen">
+            </div>
+            <div class="member-name">Prof. Minna Hakkarainen</div>
+            <div class="member-aff">KTH Royal Institute of Technology, Sweden</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Rajiv S. Mishra.jpg" alt="Prof. Rajiv S. Mishra">
+            </div>
+            <div class="member-name">Prof. Rajiv S. Mishra</div>
+            <div class="member-aff">University of North Texas, USA</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Samaneh Shahgaldi1.jpeg" alt="Prof. Samaneh Shahgaldi">
+            </div>
+            <div class="member-name">Prof. Samaneh Shahgaldi</div>
+            <div class="member-aff">University of Quebec, Canada</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Sunil Chandrakant Joshi.jpeg" alt="Prof. Sunil Chandrakant Joshi">
+            </div>
+            <div class="member-name">Prof. Sunil Chandrakant Joshi</div>
+            <div class="member-aff">NTU Singapore</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Varun Chaudhary.webp" alt="Prof. Varun Chaudhary">
+            </div>
+            <div class="member-name">Prof. Varun Chaudhary</div>
+            <div class="member-aff">Chalmers University of Technology, Sweden</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- National Advisory Committee -->
+      <div class="tab-pane fade" id="national">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Dr. A Nagesha.jfif" alt="Dr. A Nagesha">
+            </div>
+            <div class="member-name">Dr. A Nagesha</div>
+            <div class="member-aff">Indira Gandhi Centre for Atomic Research Chennai</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Dr. Amritendu Roy.png" alt="Dr. Amritendu Roy">
+            </div>
+            <div class="member-name">Dr. Amritendu Roy</div>
+            <div class="member-aff">IIT Bhubaneswar</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Amit Rawal.webp" alt="Prof. Amit Rawal">
+            </div>
+            <div class="member-name">Prof. Amit Rawal</div>
+            <div class="member-aff">IIT Delhi</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Ray.jpg" alt="Prof. Bankim Chandra Ray">
+            </div>
+            <div class="member-name">Prof. Bankim Chandra Ray</div>
+            <div class="member-aff">NIT Rourkela</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Bhanu Bhusan Khatua.png" alt="Prof. Bhanu Bhusan Khatua">
+            </div>
+            <div class="member-name">Prof. Bhanu Bhusan Khatua</div>
+            <div class="member-aff">IIT Kharagpur</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. G. Arthanareeswaran" alt="Prof. G. Arthanareeswaran">
+            </div>
+            <div class="member-name">Prof. G. Arthanareeswaran</div>
+            <div class="member-aff">NIT Tiruchirappalli</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Dr. Jitesh Barman.jpeg" alt="Dr. Jitesh Barman">
+            </div>
+            <div class="member-name">Dr. Jitesh Barman</div>
+            <div class="member-aff">BHU Varanasi</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Dr. Lokesh Saini.png" alt="Dr. Lokesh Saini">
+            </div>
+            <div class="member-name">Dr. Lokesh Saini</div>
+            <div class="member-aff">Defence Laboratory, DRDO, Jodhpur</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Dr. Mahendra Kumar.jpg" alt="Dr. Manvendra Singh Khatri">
+            </div>
+            <div class="member-name">Dr. Manvendra Singh Khatri</div>
+            <div class="member-aff">NIT Uttarakhand</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Dr. Prabeer Barpanda.jpg" alt="Dr. Prabeer Barpanda">
+            </div>
+            <div class="member-name">Dr. Prabeer Barpanda</div>
+            <div class="member-aff">IISc Bangalore</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Dr. Rajiv Kumar.jpg" alt="Dr. Rajiv Kumar">
+            </div>
+            <div class="member-name">Dr. Rajiv Kumar</div>
+            <div class="member-aff">IIT Ropar</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Ratna.jpg" alt="Prof. Ratna Kumar Annabattula">
+            </div>
+            <div class="member-name">Prof. Ratna Kumar Annabattula</div>
+            <div class="member-aff">IIT Madras</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Dr. Sandeep Sahu.webp" alt="Dr. Sandeep Sahu">
+            </div>
+            <div class="member-name">Dr. Sandeep Sahu</div>
+            <div class="member-aff">IIT Mandi</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Dr. Shib Shankar Banerjee.png" alt="Dr. Shib Shankar Banerjee">
+            </div>
+            <div class="member-name">Dr. Shib Shankar Banerjee</div>
+            <div class="member-aff">IIT Delhi</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Shobit Omar.jpg" alt="Prof. Shobit Omar">
+            </div>
+            <div class="member-name">Prof. Shobit Omar</div>
+            <div class="member-aff">IIT Kanpur</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Smrutiranjan Parida.jpg" alt="Prof. Smrutiranjan Parida">
+            </div>
+            <div class="member-name">Prof. Smrutiranjan Parida</div>
+            <div class="member-aff">IIT Bombay</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Dr. Sumanta Samal.jpg" alt="Dr. Sumanta Samal">
+            </div>
+            <div class="member-name">Dr. Sumanta Samal</div>
+            <div class="member-aff">IIT Indore</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Prof. Superb Kumar Misra.jpg" alt="Prof. Superb Kumar Misra">
+            </div>
+            <div class="member-name">Prof. Superb Kumar Misra</div>
+            <div class="member-aff">IIT Gandhinagar</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Dr. Swati Sharma.png" alt="Dr. Swati Sharma">
+            </div>
+            <div class="member-name">Dr. Swati Sharma</div>
+            <div class="member-aff">MNIT Jaipur</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Dr. Tamoghna Chakrabarti.jpg" alt="Dr. Tamoghna Chakrabarti">
+            </div>
+            <div class="member-name">Dr. Tamoghna Chakrabarti</div>
+            <div class="member-aff">IIT Patna</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Dr. Vijay Kumar Pal.jpeg" alt="Dr. Vijay Kumar Pal">
+            </div>
+            <div class="member-name">Dr. Vijay Kumar Pal</div>
+            <div class="member-aff">IIT Jammu</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 member">
+            <div class="advisory-frame">
+              <img src="assets/images/Dr. Vivek Garg.png" alt="Dr. Vivek Garg">
+            </div>
+            <div class="member-name">Dr. Vivek Garg</div>
+            <div class="member-aff">SVNIT Surat</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Local Organizing Committee -->
+      <div class="tab-pane fade" id="local">
+        <div class="local-committee-grid">
+          <div class="local-member-chip">Dr. Abhay Gupta</div>
+          <div class="local-member-chip">Dr. Amitava Banerjee</div>
+          <div class="local-member-chip">Dr. Ankur Gupta</div>
+          <div class="local-member-chip">Dr. Appala Naidu Gandi</div>
+          <div class="local-member-chip">Dr. Debasmita Dwibedi</div>
+          <div class="local-member-chip">Dr. Devendra Singh Negi</div>
+          <div class="local-member-chip">Dr. Jaiveer Singh</div>
+          <div class="local-member-chip">Dr. Jayant Kumar Mohanta</div>
+          <div class="local-member-chip">Dr. Jitendra Kumar</div>
+          <div class="local-member-chip">Dr. Lalit</div>
+          <div class="local-member-chip">Dr. Nitin Kumar Sharma</div>
+          <div class="local-member-chip">Dr. Pranay Ranjan</div>
+          <div class="local-member-chip">Dr. Ramesh K. Metre</div>
+          <div class="local-member-chip">Prof. Ravi K R</div>
+          <div class="local-member-chip">Dr. Raviraj Vankayala</div>
+          <div class="local-member-chip">Dr. Sanhita Das</div>
+          <div class="local-member-chip">Dr. Shipra Bajpai</div>
+          <div class="local-member-chip">Dr. Shobhana Singh</div>
+          <div class="local-member-chip">Prof. Shree Prakash Tiwari</div>
+          <div class="local-member-chip">Dr. Sk Md Hasan</div>
+          <div class="local-member-chip">Dr. Srijan Sengupta</div>
+          <div class="local-member-chip">Dr. Sumeet Rajesh Khanna</div>
+          <div class="local-member-chip">Prof. Sunil K Khijwania</div>
+          <div class="local-member-chip">Dr. Sumit Kalra</div>
+          <div class="local-member-chip">Dr. Vikky Anand</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Programme -->
+<section id="programme" class="section">
+  <div class="container content-box">
+    <h4 class="section-title">Programme</h4>
+     <p>The detailed programme schedule will be updated soon.</p>
+  </div>
+</section>
+
+<!-- Abstract -->
+<section id="abstract" class="section">
+  <div class="container content-box">
+    <h4 class="section-title">Abstract Submission</h4>
+    <div class="abstract-panel">
+      <div class="abstract-panel-body">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="abstract-action">
+              <div class="abstract-action-icon"><i class="fas fa-file-word"></i></div>
+              <h6>Abstract Template</h6>
+              <p>Please download the <i>i</i>-CAM 2026 abstract template and follow the prescribed format while preparing your abstract.</p>
+              <a class="download-btn" href="assets/downloads/First%20Name_Lastname_i-CAM2026_Abstract%20Template.docx" download>
+                Download Abstract Template
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="abstract-action">
+              <div class="abstract-action-icon"><i class="fas fa-paper-plane"></i></div>
+              <h6>Submit Abstract</h6>
+              <p>Authors are invited to submit their abstracts through the online abstract submission form.</p>
+              <a class="download-btn" href="https://forms.gle/5YPMtmRshhHK7eMo9" target="_blank" rel="noopener">
+                Submit Abstract
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Registration -->
+<section id="registration" class="section">
+  <div class="container content-box">
+    <h4 class="section-title">Registration</h4>
+
+    <div class="pre-registration-box">
+      <h5>Pre-Registration</h5>
+      <p class="registration-note">
+        Interested participants may complete the pre-registration form below. The registration team will use these details for further conference updates. Final registration will be confirmed only after successful fee payment.
+      </p>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSf7G0dUkYcvO2gPuhOdis3sLg85Nfohudnb69dNmU4IIfDyVQ/viewform?usp=publish-editor"
+        class="registration-action"
+        target="_blank"
+        rel="noopener">
+        Pre-Register Now*
+      </a>
+      <p style="color:#555; margin-top:12px; margin-bottom:0;">
+        The date for pre-registration has been extended to <span class="discount-highlight flash-highlight">05 Aug 2026</span>.
+      </p>
+      <p style="color:#555; margin-top:10px; margin-bottom:0;">
+        *<span class="discount-highlight">10% discount</span> on "Early Bird" registration fee will be provided on fulfilling pre-registration on or before 05 Aug 2026. The pre-registered participants must pay registration fee between 13 August 2026-September 15, 2026 to avail <span class="discount-highlight">10% discount</span>.
+      </p>
+    </div>
+
+    <p class="registration-note">
+      Registration fees are inclusive of GST.
+    </p>
+
+    <div class="table-responsive">
+      <table class="table table-bordered registration-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th class="text-center" colspan="2">Early Bird</th>
+            <th class="text-center" colspan="2">Regular</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th class="text-center" colspan="2">13 Aug.-15 Sept. 2026</th>
+            <th class="text-center" colspan="2">16 Sept.-10 Oct. 2026</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th class="text-center">National</th>
+            <th class="text-center">International</th>
+            <th class="text-center">National</th>
+            <th class="text-center">International</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Students/Research Scholars</td>
+            <td class="text-center">₹4,000</td>
+            <td class="text-center">$150</td>
+            <td class="text-center">₹5,000</td>
+            <td class="text-center">$200</td>
+          </tr>
+          <tr>
+            <td>Academicians/Faculty</td>
+            <td class="text-center">₹6,500</td>
+            <td class="text-center">$350</td>
+            <td class="text-center">₹8,125</td>
+            <td class="text-center">$400</td>
+          </tr>
+          <tr>
+            <td>Industry Delegates</td>
+            <td class="text-center">₹9,000</td>
+            <td class="text-center">$450</td>
+            <td class="text-center">₹11,250</td>
+            <td class="text-center">$500</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Registration Button -->
+    <div class="text-center mt-3">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfuzh2FfmuZ_OLUlDaIn7Dkbgc6Lxc0gS_wduP8ULu7CD9n5g/viewform?usp=dialog" class="registration-action" target="_blank" rel="noopener">
+        Register Now
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Sponsorship & Exhibition -->
+<section id="sponsorship" class="section">
+  <div class="container content-box">
+    <h4 class="section-title">Sponsorship & Exhibition</h4>
+
+    <p class="sponsorship-note">
+      Organisations are invited for sponsorship to exhibit their products and services during the conference.<br>
+      All inquiries on exhibition should be sent to <strong>convenor_icam2026@iitj.ac.in</strong>.
+      <br><a class="sponsor-mail-btn" href="mailto:convenor_icam2026@iitj.ac.in">Contact for Sponsorship</a>
+    </p>
+
+    <div class="row g-3 mb-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="sponsor-tier-card tier-platinum">
+          <div class="sponsor-tier-name">Platinum</div>
+          <div class="sponsor-tier-amount">4,00,000 INR <span>(excluding GST)</span></div>
+          <ul>
+            <li>4 complementary registrations</li>
+            <li>Logo on website, banners and registration kits</li>
+            <li>Complementary gala dinner</li>
+            <li>Complementary meals and accommodation throughout the conference</li>
+            <li>Separate stall for display with TV</li>
+            <li>Slot for talk</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="sponsor-tier-card tier-gold">
+          <div class="sponsor-tier-name">Gold</div>
+          <div class="sponsor-tier-amount">2,00,000 INR <span>(excluding GST)</span></div>
+          <ul>
+            <li>2 complementary registrations</li>
+            <li>Logo on website and banners</li>
+            <li>Complementary gala dinner</li>
+            <li>Complementary meals throughout the conference</li>
+            <li>Separate stall for display with electrical connections</li>
+            <li>Slot for talk</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="sponsor-tier-card tier-silver">
+          <div class="sponsor-tier-name">Silver</div>
+          <div class="sponsor-tier-amount">1,00,000 INR <span>(excluding GST)</span></div>
+          <ul>
+            <li>2 complementary registrations</li>
+            <li>Logo on website</li>
+            <li>Complementary gala dinner</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="sponsor-tier-card tier-exhibitor">
+          <div class="sponsor-tier-name">Exhibitor</div>
+          <div class="sponsor-tier-amount">75,000 INR <span>(excluding GST)</span></div>
+          <ul>
+            <li>Stall space of 2m*3m</li>
+            <li>Product and service display opportunity</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h5 class="mt-4 mb-3" style="color:#002147; font-weight:700;">Souvenir Advertisement</h5>
+    <div class="table-responsive">
+      <table class="table table-bordered ad-table">
+        <thead>
+          <tr>
+            <th>Advertisement Category</th>
+            <th>Amount (excluding GST)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Back Cover advertisement (In abstract booklet)</td>
+            <td>1,00,000 INR</td>
+          </tr>
+          <tr>
+            <td>Inside of front &amp; back cover (In abstract booklet)</td>
+            <td>75,000 INR</td>
+          </tr>
+          <tr>
+            <td>Full page advertisement (Inside abstract booklet)</td>
+            <td>50,000 INR</td>
+          </tr>
+          <tr>
+            <td>Half Page advertisement (Inside abstract booklet)</td>
+            <td>25,000 INR</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Logistics -->
+<section id="logistics" class="section">
+  <div class="container content-box">
+    <h4 class="section-title">Logistics</h4>
+
+    <ul class="nav nav-pills" id="logisticsTabs">
+      <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#logistics-accommodation">Accommodation</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#logistics-travel">Travel</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#logistics-visa">Visa Information</button></li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="logistics-accommodation">
+        <div class="logistics-block">
+          <h5>Accommodation</h5>
+          <p>For students, accommodation will be provided on the IIT Jodhpur campus on a first-come, first-served basis at nominal charges. Booking details will be updated soon.</p>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="logistics-travel">
+        <div class="logistics-block">
+          <h5>Travel Information for Participants</h5>
+          <p>A warm welcome to the International Conference on Applied Materials (<i>i</i>-CAM 2026), organized by the Department of Materials Engineering, Indian Institute of Technology Jodhpur. The conference will be held at the IIT Jodhpur campus from 23-25 October 2026.</p>
+
+          <p>Participants are requested to note the following travel information for reaching IIT Jodhpur.</p>
+
+          <h6>How to Reach IIT Jodhpur</h6>
+          <p>The Indian Institute of Technology Jodhpur is located on Nagaur Road, Karwar, Jodhpur, Rajasthan. The campus is well connected to Jodhpur city by road and can be reached conveniently by taxi, cab, or auto-rickshaw.</p>
+
+          <h6>Nearest Airport</h6>
+          <p>The nearest airport is Jodhpur Airport, located approximately 25 km from the IIT Jodhpur campus. Participants may hire a prepaid taxi/cab from the airport to reach the Institute.</p>
+
+          <h6>By Railways</h6>
+          <p>The nearest major railway station is Jodhpur Junction Railway Station, which is approximately 24 km from IIT Jodhpur. Participants arriving by train may exit from the Platform No. 1 side and take a prepaid taxi/cab or auto-rickshaw to the IIT Jodhpur permanent campus.</p>
+
+          <h6>By Roadways</h6>
+          <p>Jodhpur is well connected by road to major cities of Rajasthan and nearby states. Participants travelling by road may proceed towards Nagaur Road and follow the route towards Karwar to reach the IIT Jodhpur campus. Local taxis, app-based cabs, and auto-rickshaws are available from different parts of Jodhpur city.</p>
+
+          <h6>Suggested Direction for Taxi/Cab</h6>
+          <p>Participants may ask the driver to proceed towards IIT Jodhpur Permanent Campus, Nagaur Road, Karwar, via the Mandore side. The campus is located outside the main city area, so participants are advised to plan their travel time accordingly.</p>
+        </div>
+
+        <div class="map-card">
+          <div class="map-card-header">Venue Location: IIT Jodhpur</div>
+          <iframe
+            class="map-frame"
+            title="IIT Jodhpur Google Map"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=IIT%20Jodhpur&output=embed">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="logistics-visa">
+        <div class="logistics-block">
+          <h5>Visa Information</h5>
+          <p>Visa information will be updated soon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+  <div class="container content-box">
+    <h4 class="section-title">Contact</h4>
+
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="contact-card">
+          <h5>Registration & General Queries</h5>
+          <p>For queries related to registration, fee payment/cancellation, local hospitality and any general query.</p>
+          <p><i class="fas fa-envelope"></i><strong>Email:</strong> icam@iitj.ac.in</p>
+          <p><i class="fas fa-phone"></i><strong>Phone:</strong> +91-8769668966, +91-8446670132</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="contact-card">
+          <h5>Technical & Sponsorship Queries</h5>
+          <p>For technical queries such as abstract submission, guidelines for presentations and proceedings, technical sessions and sponsorship.</p>
+          <p><i class="fas fa-envelope"></i><strong>Email:</strong> convenor_icam2026@iitj.ac.in</p>
+          <p><i class="fas fa-phone"></i><strong>Phone:</strong> +91-9336153709, +91-9330299920</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Site Statistics -->
+<section class="section">
+  <div class="container content-box">
+    <h4 class="section-title">Site Statistics</h4>
+
+    <div class="row text-center mt-4 justify-content-center">
+      <div class="col-md-4 col-lg-3 mb-3">
+        <div class="stat-card">
+          <i class="fas fa-user-check stat-icon"></i>
+          <div class="stat-number" id="todayVisitors">0</div>
+          <div class="stat-label">Today Visitors</div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3 mb-3">
+        <div class="stat-card">
+          <i class="fas fa-users stat-icon"></i>
+          <div class="stat-number" id="visitorCount">0</div>
+          <div class="stat-label">Total Visitors</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .stat-card {
+    background:linear-gradient(180deg, #ffffff, #f7fbff);
+    padding:25px;
+    border:1px solid #e0e7ef;
+    border-radius:8px;
+    box-shadow:0 8px 22px rgba(0,33,71,0.10);
+    transition:all 0.3s ease;
+  }
+
+  .stat-card:hover {
+    transform:translateY(-5px);
+    box-shadow:0 12px 28px rgba(0,33,71,0.18);
+  }
+
+  .stat-icon {
+    font-size:28px;
+    color:#8B0000;
+    margin-bottom:10px;
+  }
+
+  .stat-number {
+    font-size:32px;
+    font-weight:700;
+    color:#002147;
+  }
+
+  .stat-label {
+    font-size:14px;
+    color:#555;
+    margin-top:5px;
+  }
+</style>
+
+<script>
+  fetch('https://script.google.com/macros/s/AKfycbzEG1fPJDTfE0mQ-zeaDkkk3LgRcd5ey_sW_MRcef9cA6-q4ujuY2gyDjugkfc-vc86/exec', { cache: 'no-store' })
+    .then(function (response) {
+      if (!response.ok) throw new Error('Unable to load visitor statistics');
+      return response.json();
+    })
+    .then(function (stats) {
+      document.getElementById("todayVisitors").innerText = Number(stats.todayVisitors || 0).toLocaleString();
+      document.getElementById("visitorCount").innerText = Number(stats.totalVisitors || 0).toLocaleString();
+    })
+    .catch(function () {
+      document.getElementById("todayVisitors").innerText = "N/A";
+      document.getElementById("visitorCount").innerText = "N/A";
+    });
+</script>
+
+<footer>
+  <div class="container text-center">
+
+    <div class="footer-top">
+      <div><strong>i-CAM 2026</strong> | Indian Institute of Technology Jodhpur</div>
+      <div class="footer-links mt-2">
+        <a href="#about">About</a>
+        <a href="#programme">Programme</a>
+        <a href="#registration">Registration</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © i-CAM 2026 | IIT Jodhpur. All Rights Reserved.
+    </div>
+
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const carouselEl = document.getElementById('heroCarousel');
+  let carousel;
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Hide preloader
+  document.getElementById('preloader').style.display = 'none';
+
+  // Initialize carousel after the page structure is ready
+  carousel = new bootstrap.Carousel(carouselEl, {
+    interval: 4000,
+    pause: false,
+    ride: 'carousel',
+    wrap: true
+  });
+});
+
+  const video = document.getElementById('heroVideo');
+
+  // When slide changes
+  carouselEl.addEventListener('slid.bs.carousel', function (e) {
+    const activeItem = e.relatedTarget;
+    const vid = activeItem.querySelector('video');
+
+    if (vid) {
+      // Pause carousel and play video once
+      carousel.pause();
+      vid.currentTime = 0;
+      vid.play();
+
+      vid.onended = function () {
+        carousel.next();
+        setTimeout(() => carousel.cycle(), 500);
+      };
+    } else {
+      // If not video, ensure any video is paused
+      if (video) video.pause();
+      carousel.cycle();
+    }
+  });
+</script>
+<script>
+  document.querySelectorAll('#mainNavbar .nav-link').forEach(function (link) {
+    link.addEventListener('click', function () {
+      const navbar = document.getElementById('mainNavbar');
+      if (navbar && navbar.classList.contains('show')) {
+        bootstrap.Collapse.getOrCreateInstance(navbar).hide();
+      }
+    });
+  });
+
+  const keyAttractionsNav = document.getElementById('keyAttractionsNav');
+  if (keyAttractionsNav) {
+    keyAttractionsNav.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      const aboutJodhpurTab = document.querySelector('#aboutTabs button[data-bs-target="#about5"]');
+      const keyAttractions = document.getElementById('keyAttractionsCollapse');
+      const keyAttractionsHeader = document.getElementById('keyAttractionsHeading');
+
+      if (aboutJodhpurTab) {
+        bootstrap.Tab.getOrCreateInstance(aboutJodhpurTab).show();
+      }
+
+      setTimeout(function () {
+        if (keyAttractions) {
+          bootstrap.Collapse.getOrCreateInstance(keyAttractions, { toggle: false }).show();
+        }
+
+        const scrollTarget = keyAttractionsHeader || document.getElementById('about');
+        if (scrollTarget) {
+          const top = scrollTarget.getBoundingClientRect().top + window.pageYOffset - 110;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      }, 180);
+    });
+  }
+</script>
+<script>
+  document.addEventListener('contextmenu', function (e) {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+  });
+</script>
+</body>
+</html>
