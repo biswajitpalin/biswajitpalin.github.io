@@ -41,160 +41,59 @@
   <a href="https://www.instagram.com/mrbiswajit03" target="_blank" class="social-instagram"><i class="fab fa-instagram"></i></a>
 </div>
 
-<!-- Navigation (Hamburger for Mobile) -->
-<nav class="navbar navbar-expand-lg nav-tabs-custom sticky-top">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark nav-tabs-custom sticky-top" aria-label="Main navigation">
   <div class="container">
-    <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+    <a class="navbar-brand d-lg-none" href="index.html" aria-label="Biswajit Pal home">Biswajit Pal</a>
+
+    <button class="navbar-toggler text-white border-0" type="button"
+            data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
       <ul class="navbar-nav">
-  <li class="nav-item"><a class="nav-link" href="index.html#top">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 
-  <li class="nav-item dropdown d-flex align-items-center">
-    <a class="nav-link" href="news.html">News</a>
-    <button class="nav-link dropdown-toggle dropdown-toggle-split border-0 bg-transparent"
-      id="newsDropdownToggle" type="button" data-bs-toggle="dropdown"
-      aria-expanded="false" aria-label="Open News submenu">
-      <span class="visually-hidden">Toggle News submenu</span>
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="newsDropdownToggle">
-      <li><a class="dropdown-item" href="news.html#miscellaneous">Miscellaneous</a></li>
-      <li><a class="dropdown-item" href="news.html#academic-visits">Academic Visits</a></li>
-      <li><a class="dropdown-item" href="news.html#talks-seminars">Talks &amp; Seminars</a></li>
-      <li><a class="dropdown-item" href="news.html#publications">Publications</a></li>
-      <li><a class="dropdown-item" href="news.html#projects-grants">Projects &amp; Grants</a></li>
-    </ul>
-  </li>
-
-  <li class="nav-item dropdown d-flex align-items-center">
-    <a class="nav-link" href="about.html">About Me</a>
-    <button class="nav-link dropdown-toggle dropdown-toggle-split border-0 bg-transparent"
-      id="aboutDropdownToggle" type="button" data-bs-toggle="dropdown"
-      aria-expanded="false" aria-label="Open About Me submenu">
-      <span class="visually-hidden">Toggle About Me submenu</span>
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="aboutDropdownToggle">
-      <li><a class="dropdown-item" href="about.html#academic-journey">Academic Journey</a></li>
-      <li><a class="dropdown-item" href="about.html#teaching">Teaching</a></li>
-      <li><a class="dropdown-item" href="about.html#roles-responsibilities">Roles &amp; Responsibilities</a></li>
-      <li><a class="dropdown-item" href="about.html#achievements">Achievements</a></li>
-      <li><a class="dropdown-item" href="about.html#personal-pursuits">Personal Pursuits</a></li>
-    </ul>
-  </li>
-
-  <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-  <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-  <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-  <li class="nav-item"><a class="nav-link" href="sites.html">Useful Sites</a></li>
-  <li class="nav-item"><a class="nav-link" href="downloads.html">Downloads</a></li>
-  <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
-</ul>
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="news.html">News</a>
+          <button class="nav-link dropdown-toggle dropdown-toggle-split border-0 bg-transparent"
+                  id="newsDropdownToggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" aria-label="Open News submenu">
+            <span class="visually-hidden">Toggle News submenu</span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="newsDropdownToggle">
+            <li><a class="dropdown-item" href="news.html#miscellaneous">Miscellaneous</a></li>
+            <li><a class="dropdown-item" href="news.html#academic-visits">Academic Visits</a></li>
+            <li><a class="dropdown-item" href="news.html#talks-seminars">Talks &amp; Seminars</a></li>
+            <li><a class="dropdown-item" href="news.html#publications">Publications</a></li>
+            <li><a class="dropdown-item" href="news.html#projects-grants">Projects &amp; Grants</a></li>
+          </ul>
         </li>
 
-
-        <!-- About Me page link + submenu toggle -->
         <li class="nav-item dropdown d-flex align-items-center">
           <a class="nav-link" href="about.html">About Me</a>
-        
-          <button
-            class="nav-link dropdown-toggle dropdown-toggle-split border-0 bg-transparent"
-            id="aboutMeDropdownToggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            aria-label="Open About Me submenu">
+          <button class="nav-link dropdown-toggle dropdown-toggle-split border-0 bg-transparent"
+                  id="aboutMeDropdownToggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" aria-label="Open About Me submenu">
             <span class="visually-hidden">Toggle About Me submenu</span>
           </button>
-        
           <ul class="dropdown-menu" aria-labelledby="aboutMeDropdownToggle">
-            <li>
-              <a class="dropdown-item" href="about.html#academic-journey">Academic Journey</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="about.html#teaching">Teaching</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="about.html#roles-responsibilities">Roles &amp; Responsibilities</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="about.html#achievements">Achievements</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="about.html#personal-pursuits">Personal Pursuits</a>
-            </li>
+            <li><a class="dropdown-item" href="about.html#academic-journey">Academic Journey</a></li>
+            <li><a class="dropdown-item" href="about.html#teaching">Teaching</a></li>
+            <li><a class="dropdown-item" href="about.html#roles-responsibilities">Roles &amp; Responsibilities</a></li>
+            <li><a class="dropdown-item" href="about.html#achievements">Achievements</a></li>
+            <li><a class="dropdown-item" href="about.html#personal-pursuits">Personal Pursuits</a></li>
           </ul>
         </li>
 
-        
-        <!-- News Dropdown Menu -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle"
-             href="#about"
-             id="newsDropdown"
-             role="button"
-             data-bs-toggle="dropdown"
-             aria-expanded="false">
-            Research
-          </a>
-    
-          <ul class="dropdown-menu" aria-labelledby="newsDropdown">
-            <li>
-              <a class="dropdown-item" href="#recent-news">Interests</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#recent-news">Expertise</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#recent-news">Short Clips</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#recent-news">Collaborators</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#recent-news">Research Talks</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#recent-news">Projects & Grants</a>
-            </li>
-          </ul>
-        </li>
-        
-        <!-- News Dropdown Menu -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle"
-             href="#about"
-             id="newsDropdown"
-             role="button"
-             data-bs-toggle="dropdown"
-             aria-expanded="false">
-            Publications
-          </a>
-    
-          <ul class="dropdown-menu" aria-labelledby="newsDropdown">
-            <li>
-              <a class="dropdown-item" href="#recent-news">High IF Publications</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#recent-news">All Research Articles</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#recent-news">Research Books</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#recent-news">Patents</a>
-            </li>
-          </ul>
-        </li>        
-        <li class="nav-item"><a class="nav-link" href="#dates">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="#dates">Useful Sites</a></li>
-        <li class="nav-item"><a class="nav-link" href="#dates">Downloads</a></li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact Me</a>
-        </li>
-
+        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="sites.html">Useful Sites</a></li>
+        <li class="nav-item"><a class="nav-link" href="downloads.html">Downloads</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
       </ul>
     </div>
   </div>
@@ -1752,7 +1651,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 </script>
 <script>
-  document.querySelectorAll('#mainNavbar .nav-link').forEach(function (link) {
+  // Close the mobile menu after a navigation link is selected.
+  // Dropdown toggle buttons are deliberately excluded so their menus can open.
+  document.querySelectorAll('#mainNavbar a.nav-link, #mainNavbar a.dropdown-item').forEach(function (link) {
     link.addEventListener('click', function () {
       const navbar = document.getElementById('mainNavbar');
       if (navbar && navbar.classList.contains('show')) {
