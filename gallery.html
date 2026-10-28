@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Biswajit Pal</title>
+  <meta name="description" content="Gallery page of Biswajit Pal's personal website.">
+  <link rel="icon" type="image/jpeg" href="assets/images/icam_logo_hd.jpg">
+  <link rel="apple-touch-icon" href="assets/images/icam_logo_hd.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="top">
+<nav class="navbar navbar-expand-lg nav-tabs-custom sticky-top" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand text-white fw-bold d-lg-none" href="index.html">Biswajit Pal</a>
+    <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse justify-content-center" id="mainNavbar"><ul class="navbar-nav">
+  <li class="nav-item"><a class="nav-link" href="index.html#top">Home</a></li>
 
+  <li class="nav-item dropdown d-flex align-items-center">
+    <a class="nav-link" href="news.html">News</a>
+    <button class="nav-link dropdown-toggle dropdown-toggle-split border-0 bg-transparent"
+      id="newsDropdownToggle" type="button" data-bs-toggle="dropdown"
+      aria-expanded="false" aria-label="Open News submenu">
+      <span class="visually-hidden">Toggle News submenu</span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="newsDropdownToggle">
+      <li><a class="dropdown-item" href="news.html#miscellaneous">Miscellaneous</a></li>
+      <li><a class="dropdown-item" href="news.html#academic-visits">Academic Visits</a></li>
+      <li><a class="dropdown-item" href="news.html#talks-seminars">Talks &amp; Seminars</a></li>
+      <li><a class="dropdown-item" href="news.html#publications">Publications</a></li>
+      <li><a class="dropdown-item" href="news.html#projects-grants">Projects &amp; Grants</a></li>
+    </ul>
+  </li>
+
+  <li class="nav-item dropdown d-flex align-items-center">
+    <a class="nav-link" href="about.html">About Me</a>
+    <button class="nav-link dropdown-toggle dropdown-toggle-split border-0 bg-transparent"
+      id="aboutDropdownToggle" type="button" data-bs-toggle="dropdown"
+      aria-expanded="false" aria-label="Open About Me submenu">
+      <span class="visually-hidden">Toggle About Me submenu</span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="aboutDropdownToggle">
+      <li><a class="dropdown-item" href="about.html#academic-journey">Academic Journey</a></li>
+      <li><a class="dropdown-item" href="about.html#teaching">Teaching</a></li>
+      <li><a class="dropdown-item" href="about.html#roles-responsibilities">Roles &amp; Responsibilities</a></li>
+      <li><a class="dropdown-item" href="about.html#achievements">Achievements</a></li>
+      <li><a class="dropdown-item" href="about.html#personal-pursuits">Personal Pursuits</a></li>
+    </ul>
+  </li>
+
+  <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+  <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+  <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+  <li class="nav-item"><a class="nav-link" href="sites.html">Useful Sites</a></li>
+  <li class="nav-item"><a class="nav-link" href="downloads.html">Downloads</a></li>
+  <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+</ul></div>
+  </div>
+</nav>
+<!-- Intentionally blank content area: add this page's content here later. -->
+<main class="section" aria-label="Gallery content"></main>
+<footer><div class="container text-center"><div class="footer-top"><div><strong>Biswajit Pal</strong> | Personal Website</div><div class="footer-links mt-2"><a href="index.html">Home</a><a href="about.html">About Me</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="contact.html">Contact</a></div></div><div class="footer-bottom">© <span class="current-year"></span> Biswajit Pal. All rights reserved.</div></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>document.querySelectorAll('.current-year').forEach(function(el){el.textContent = new Date().getFullYear();});</script>
+<script>
+  document.addEventListener('click', function (event) {
+    const link = event.target.closest('#mainNavbar a');
+    const navbar = document.getElementById('mainNavbar');
+    if (link && navbar && navbar.classList.contains('show')) {
+      bootstrap.Collapse.getOrCreateInstance(navbar).hide();
+    }
+  });
+</script>
+</body>
+</html>
