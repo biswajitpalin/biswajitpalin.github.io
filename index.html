@@ -51,33 +51,36 @@
     <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+
+        <!-- News page link + submenu toggle -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="news.html">News</a>
         
-        <!-- News Dropdown Menu -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle"
-             href="#about"
-             id="newsDropdown"
-             role="button"
-             data-bs-toggle="dropdown"
-             aria-expanded="false">
-            News
-          </a>
-    
-          <ul class="dropdown-menu" aria-labelledby="newsDropdown">
+          <button
+            class="nav-link dropdown-toggle dropdown-toggle-split border-0 bg-transparent"
+            id="newsDropdownToggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            aria-label="Open News submenu">
+            <span class="visually-hidden">Toggle News submenu</span>
+          </button>
+        
+          <ul class="dropdown-menu" aria-labelledby="newsDropdownToggle">
             <li>
-              <a class="dropdown-item" href="#recent-news">Miscellaneous</a>
+              <a class="dropdown-item" href="news.html#miscellaneous">Miscellaneous</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#recent-news">Academic Visits</a>
+              <a class="dropdown-item" href="news.html#academic-visits">Academic Visits</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#recent-news">Talks & Seminars</a>
+              <a class="dropdown-item" href="news.html#talks-seminars">Talks &amp; Seminars</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#recent-news">Publications</a>
+              <a class="dropdown-item" href="news.html#publications">Publications</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#recent-news">Projects & Grants</a>
+              <a class="dropdown-item" href="news.html#projects-grants">Projects &amp; Grants</a>
             </li>
           </ul>
         </li>
